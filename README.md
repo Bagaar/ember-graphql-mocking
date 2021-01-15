@@ -1,7 +1,9 @@
 @bagaar/ember-graphql-mocking
 ==============================================================================
 
-[Short description of the addon.]
+Ember addon for mocking GraphQL requests using Mock Service Worker (MSW).
+
+> :warning: Experimental mocking package used at Bagaar. You probably shouldn't use this.
 
 
 Compatibility
