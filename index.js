@@ -7,7 +7,10 @@ module.exports = {
   name: require('./package').name,
 
   treeForPublic(tree) {
-    return mergeTrees([tree, funnel('public')], {
+    const host = this._findHost();
+    const publicTree = host.trees.public;
+
+    return mergeTrees([tree, funnel(publicTree)], {
       overwrite: true,
     });
   },
