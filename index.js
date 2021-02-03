@@ -8,9 +8,13 @@ module.exports = {
 
   treeForPublic(tree) {
     const host = this._findHost();
-    const publicTree = host.trees.public;
+    const shouldExcludePublicFiles = host.env === 'production';
 
-    return mergeTrees([tree, funnel(publicTree)], {
+    if (shouldExcludePublicFiles) {
+      return;
+    }
+
+    return mergeTrees([tree, funnel(host.trees.public)], {
       overwrite: true,
     });
   },
