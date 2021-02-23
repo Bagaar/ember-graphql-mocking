@@ -63,7 +63,7 @@ function createGraphqlOperationHandler() {
       req.variables
     );
 
-    return res(ctx.data(queryResult.data));
+    return res(ctx.data(queryResult.data), ctx.errors(queryResult.errors));
   });
 
   worker.use(graphqlOperation);
