@@ -7,7 +7,6 @@ const TEST_PATH = '/tests';
 
 const SERVICE_WORKER_QUIET = IS_TESTEM;
 const SERVICE_WORKER_SCOPE = IS_TESTEM ? PATH_NAME : TEST_PATH;
-const SERVICE_WORKER_URL = '/ember-graphql-mocking-service-worker.js';
 
 let root = null;
 let schema = null;
@@ -40,7 +39,6 @@ function createWorker() {
       options: {
         scope: SERVICE_WORKER_SCOPE,
       },
-      url: SERVICE_WORKER_URL,
     },
   });
 }
