@@ -1,6 +1,6 @@
 # Ember GraphQL Mocking
 
-[![Build Status](https://travis-ci.com/bagaar/ember-graphql-mocking.svg?branch=main)](https://travis-ci.com/bagaar/ember-graphql-mocking)
+[![CI](https://github.com/Bagaar/ember-graphql-mocking/workflows/CI/badge.svg)](https://github.com/Bagaar/ember-graphql-mocking/actions?query=workflow%3ACI)
 [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
