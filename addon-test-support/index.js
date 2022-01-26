@@ -1,3 +1,4 @@
+import { assert } from '@ember/debug';
 import { buildASTSchema, graphql } from 'graphql';
 import { graphql as graphqlMock, setupWorker } from 'msw';
 
@@ -8,6 +9,7 @@ const TEST_PATH = '/tests';
 const SERVICE_WORKER_QUIET = IS_TESTEM;
 const SERVICE_WORKER_SCOPE = IS_TESTEM ? PATH_NAME : TEST_PATH;
 
+let isSetupGraphqlTestCalled = false;
 let root = null;
 let schema = null;
 let worker = null;
@@ -19,10 +21,17 @@ export function setupEmberGraphqlMocking(schemaDocument) {
 }
 
 export function setupGraphqlTest(hooks) {
+  hooks.before(() => (isSetupGraphqlTestCalled = true));
+  hooks.after(() => (isSetupGraphqlTestCalled = false));
   hooks.afterEach(clearRoot);
 }
 
 export function mockResolvers(resolvers) {
+  assert(
+    'Cannot call `mockResolvers` before calling `setupGraphqlTest`. Please make sure to call `setupGraphqlTest(hooks);`.',
+    isSetupGraphqlTestCalled
+  );
+
   root = { ...root, ...resolvers };
 }
 
