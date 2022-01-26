@@ -21,7 +21,7 @@ module('Acceptance | ember graphql mocking', function (hooks) {
 
     await visit('/');
 
-    assert.equal(currentURL(), '/');
+    assert.strictEqual(currentURL(), '/');
 
     assert.dom('[data-test-me-id]').hasText('1');
     assert.dom('[data-test-me-first-name]').hasText('John');
