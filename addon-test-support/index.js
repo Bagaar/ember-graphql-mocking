@@ -57,18 +57,13 @@ function createSchema(schemaDocument) {
 }
 
 function createGraphqlOperationHandler() {
-  const graphqlOperation = graphqlMock.operation(async function (
-    req,
-    res,
-    ctx
-  ) {
-    const queryResult = await graphql(
+  const graphqlOperation = graphqlMock.operation(async (req, res, ctx) => {
+    const queryResult = await graphql({
+      rootValue: root,
       schema,
-      req.body.query,
-      root,
-      null,
-      req.variables
-    );
+      source: req.body.query,
+      variableValues: req.variables,
+    });
 
     return res(ctx.data(queryResult.data), ctx.errors(queryResult.errors));
   });
