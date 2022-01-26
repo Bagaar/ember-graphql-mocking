@@ -11,7 +11,7 @@ Ember addon for mocking GraphQL requests using [Mock Service Worker (MSW)](https
 ## Compatibility
 
 - Ember.js v3.16 or above (lower probably works as well, but isn't tested explicitly)
-- Ember CLI v2.13 or above
+- Ember CLI v3.16 or above
 - Node.js v10 or above
 
 ## Installation
@@ -60,7 +60,7 @@ start();
 
 `mockResolvers` accepts an object that consists of one or more resolvers. The key must be the name of the mocked operation, the value can either be a response object _or_ a function that returns a response object.
 
-> **NOTE:** Make sure that your operations are named in order for `@bagaar/ember-graphql-mocking` the function properly.
+> **NOTE:** Make sure that your operations are named in order for `@bagaar/ember-graphql-mocking` to function properly.
 
 ```javascript
 // tests/acceptance/my-acceptance-test.js
