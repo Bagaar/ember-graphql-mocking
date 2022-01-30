@@ -10,8 +10,8 @@ Ember addon for mocking GraphQL requests using [Mock Service Worker (MSW)](https
 
 ## Compatibility
 
-- Ember.js v3.16 or above (lower probably works as well, but isn't tested explicitly)
-- Ember CLI v3.16 or above
+- Ember.js v3.24 or above (lower probably works as well, but isn't tested explicitly)
+- Ember CLI v3.24 or above
 - Node.js v12 or above
 
 ## Installation
