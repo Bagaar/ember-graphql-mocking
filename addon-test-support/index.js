@@ -1,23 +1,32 @@
 import { assert } from '@ember/debug';
 import { buildASTSchema, graphql } from 'graphql';
 import { graphql as graphqlMock, setupWorker } from 'msw';
+import { begin, done } from 'qunit';
 
 const IS_TESTEM = Boolean(window.Testem);
-const PATH_NAME = window.location.pathname;
-const TEST_PATH = '/tests';
-
-const SERVICE_WORKER_QUIET = IS_TESTEM;
-const SERVICE_WORKER_SCOPE = IS_TESTEM ? PATH_NAME : TEST_PATH;
+const DEFAULT_OPTIONS = {
+  quiet: IS_TESTEM,
+  scope: IS_TESTEM ? window.location.pathname : '/tests',
+};
 
 let isSetupGraphqlTestCalled = false;
 let root = null;
-let schema = null;
 let worker = null;
 
-export function setupEmberGraphqlMocking(schemaDocument) {
-  createWorker();
-  createSchema(schemaDocument);
-  createGraphqlOperationHandler();
+export function setupEmberGraphqlMocking(schemaDocument, providedOptions) {
+  const options = {
+    ...DEFAULT_OPTIONS,
+    ...providedOptions,
+  };
+
+  begin(() => {
+    createWorker(options);
+    createGraphqlOperationHandler(schemaDocument);
+  });
+
+  done(() => {
+    destroyWorker();
+  });
 }
 
 export function setupGraphqlTest(hooks) {
@@ -39,24 +48,26 @@ export function getWorker() {
   return worker;
 }
 
-function createWorker() {
+function createWorker(options) {
   worker = setupWorker();
 
   worker.start({
-    quiet: SERVICE_WORKER_QUIET,
+    quiet: options.quiet,
     serviceWorker: {
       options: {
-        scope: SERVICE_WORKER_SCOPE,
+        scope: options.scope,
       },
     },
   });
 }
 
-function createSchema(schemaDocument) {
-  schema = buildASTSchema(schemaDocument);
+function destroyWorker() {
+  worker.stop();
+  worker = null;
 }
 
-function createGraphqlOperationHandler() {
+function createGraphqlOperationHandler(schemaDocument) {
+  const schema = buildASTSchema(schemaDocument);
   const graphqlOperation = graphqlMock.operation(async (req, res, ctx) => {
     const queryResult = await graphql({
       rootValue: root,
@@ -72,5 +83,5 @@ function createGraphqlOperationHandler() {
 }
 
 function clearRoot() {
-  root = {};
+  root = null;
 }
