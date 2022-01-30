@@ -1,6 +1,7 @@
 import { assert } from '@ember/debug';
 import { buildASTSchema, graphql } from 'graphql';
 import { graphql as graphqlMock, setupWorker } from 'msw';
+import { begin, done } from 'qunit';
 
 const IS_TESTEM = Boolean(window.Testem);
 const PATH_NAME = window.location.pathname;
@@ -14,8 +15,14 @@ let root = null;
 let worker = null;
 
 export function setupEmberGraphqlMocking(schemaDocument) {
-  createWorker();
-  createGraphqlOperationHandler(schemaDocument);
+  begin(() => {
+    createWorker();
+    createGraphqlOperationHandler(schemaDocument);
+  });
+
+  done(() => {
+    destroyWorker();
+  });
 }
 
 export function setupGraphqlTest(hooks) {
@@ -50,6 +57,11 @@ function createWorker() {
   });
 }
 
+function destroyWorker() {
+  worker.stop();
+  worker = null;
+}
+
 function createGraphqlOperationHandler(schemaDocument) {
   const schema = buildASTSchema(schemaDocument);
   const graphqlOperation = graphqlMock.operation(async (req, res, ctx) => {
@@ -67,5 +79,5 @@ function createGraphqlOperationHandler(schemaDocument) {
 }
 
 function clearRoot() {
-  root = {};
+  root = null;
 }
