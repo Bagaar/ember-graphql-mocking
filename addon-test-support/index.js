@@ -11,13 +11,11 @@ const SERVICE_WORKER_SCOPE = IS_TESTEM ? PATH_NAME : TEST_PATH;
 
 let isSetupGraphqlTestCalled = false;
 let root = null;
-let schema = null;
 let worker = null;
 
 export function setupEmberGraphqlMocking(schemaDocument) {
   createWorker();
-  createSchema(schemaDocument);
-  createGraphqlOperationHandler();
+  createGraphqlOperationHandler(schemaDocument);
 }
 
 export function setupGraphqlTest(hooks) {
@@ -52,11 +50,8 @@ function createWorker() {
   });
 }
 
-function createSchema(schemaDocument) {
-  schema = buildASTSchema(schemaDocument);
-}
-
-function createGraphqlOperationHandler() {
+function createGraphqlOperationHandler(schemaDocument) {
+  const schema = buildASTSchema(schemaDocument);
   const graphqlOperation = graphqlMock.operation(async (req, res, ctx) => {
     const queryResult = await graphql({
       rootValue: root,
