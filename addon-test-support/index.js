@@ -1,7 +1,7 @@
 import { assert } from '@ember/debug';
 import { buildASTSchema, graphql } from 'graphql';
-import { graphql as graphqlMock, setupWorker } from 'msw';
-import { begin, done } from 'qunit';
+import { graphql as mswGraphql, setupWorker } from 'msw';
+import { done as qunitDone } from 'qunit';
 
 const IS_TESTEM = Boolean(window.Testem);
 const DEFAULT_OPTIONS = {
@@ -19,14 +19,9 @@ export function setupEmberGraphqlMocking(schemaDocument, providedOptions) {
     ...providedOptions,
   };
 
-  begin(() => {
-    createWorker(options);
-    createGraphqlOperationHandler(schemaDocument);
-  });
-
-  done(() => {
-    destroyWorker();
-  });
+  createWorker(options);
+  createGraphqlOperationHandler(schemaDocument);
+  qunitDone(destroyWorker);
 }
 
 export function setupGraphqlTest(hooks) {
@@ -68,7 +63,7 @@ function destroyWorker() {
 
 function createGraphqlOperationHandler(schemaDocument) {
   const schema = buildASTSchema(schemaDocument);
-  const graphqlOperation = graphqlMock.operation(async (req, res, ctx) => {
+  const graphqlOperation = mswGraphql.operation(async (req, res, ctx) => {
     const queryResult = await graphql({
       rootValue: root,
       schema,
