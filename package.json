@@ -21,7 +21,6 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "prepare": "husky install",
-    "release": "standard-version",
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test",
@@ -82,7 +81,6 @@
     "qunit-dom": "^2.0.0",
     "release-it": "^14.2.1",
     "release-it-lerna-changelog": "^4.0.1",
-    "standard-version": "^9.3.0",
     "webpack": "^5.65.0"
   },
   "engines": {
