@@ -1,4 +1,13 @@
 
+
+## v0.4.0 (2022-02-03)
+
+#### :rocket: Enhancement
+* [#18](https://github.com/Bagaar/ember-graphql-mocking/pull/18) Make `msw` start options configurable ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
 ## v0.3.2 (2022-02-02)
 
 #### :house: Internal

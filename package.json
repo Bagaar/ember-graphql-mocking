@@ -1,6 +1,6 @@
 {
   "name": "@bagaar/ember-graphql-mocking",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "Ember addon for mocking GraphQL requests using Mock Service Worker (MSW).",
   "keywords": [
     "ember-addon"
