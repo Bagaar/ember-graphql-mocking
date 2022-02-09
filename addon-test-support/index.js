@@ -2,7 +2,6 @@ import { assert } from '@ember/debug';
 import { buildASTSchema, graphql } from 'graphql';
 import merge from 'lodash.merge';
 import { graphql as mswGraphql, setupWorker } from 'msw';
-import { done as qunitDone } from 'qunit';
 
 const IS_TESTEM = Boolean(window.Testem);
 const DEFAULT_OPTIONS = {
@@ -25,7 +24,6 @@ export function setupEmberGraphqlMocking(schemaDocument, providedOptions) {
 
   createWorker(options);
   createGraphqlOperationHandler(schemaDocument);
-  qunitDone(destroyWorker);
 }
 
 export function setupGraphqlTest(hooks) {
@@ -47,16 +45,16 @@ export function getWorker() {
   return worker;
 }
 
+export function destroyWorker() {
+  worker.stop();
+
+  worker = null;
+}
+
 function createWorker(options) {
   worker = setupWorker();
 
   worker.start(options.mswStartOptions);
-}
-
-function destroyWorker() {
-  worker.stop();
-
-  worker = null;
 }
 
 function createGraphqlOperationHandler(schemaDocument) {
