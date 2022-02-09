@@ -1,5 +1,20 @@
 
 
+
+## v0.4.1 (2022-02-09)
+
+#### :bug: Bug Fix
+* [#24](https://github.com/Bagaar/ember-graphql-mocking/pull/24) Don't automatically stop the worker when all tests are done (fix compat with `ember-cli-code-coverage@v1`) ([@bertdeblock](https://github.com/bertdeblock))
+
+#### :memo: Documentation
+* [#19](https://github.com/Bagaar/ember-graphql-mocking/pull/19) Fix install command in docs ([@bertdeblock](https://github.com/bertdeblock))
+
+#### :house: Internal
+* [#22](https://github.com/Bagaar/ember-graphql-mocking/pull/22) Don't publish `.husky` folder and `RELEASE.md` file ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
 ## v0.4.0 (2022-02-03)
 
 #### :rocket: Enhancement
