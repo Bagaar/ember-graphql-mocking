@@ -6,8 +6,6 @@
 
 Ember addon for mocking GraphQL requests using [Mock Service Worker (MSW)](https://github.com/mswjs/msw).
 
-> :warning: Experimental mocking package used at Bagaar. You probably shouldn't use this for now.
-
 ## Compatibility
 
 - Ember.js v3.24 or above (lower probably works as well, but isn't tested explicitly)
@@ -50,6 +48,17 @@ setupEmberGraphqlMocking(schema); // 3.
 start();
 ```
 
+If you want to pass along additional [start options](https://mswjs.io/docs/api/setup-worker/start#options)
+to MSW's service worker, you can do so by defining an `mswStartOptions` object:
+
+```js
+setupEmberGraphqlMocking(schema, {
+  mswStartOptions: {
+    // Additional MSW start options...
+  },
+});
+```
+
 ### 2. Write an Acceptance Test
 
 1. Import `mockResolvers` and `setupGraphqlTest`
@@ -60,7 +69,7 @@ start();
 
 `mockResolvers` accepts an object that consists of one or more resolvers. The key must be the name of the mocked operation, the value can either be a response object _or_ a function that returns a response object.
 
-> **NOTE:** Make sure that your operations are named in order for `@bagaar/ember-graphql-mocking` to function properly.
+> **NOTE:** Make sure that your operations are [named](https://graphql.org/learn/queries/#operation-name) in order for `@bagaar/ember-graphql-mocking` to function properly.
 
 ```javascript
 // tests/acceptance/my-acceptance-test.js
@@ -93,6 +102,8 @@ module('Acceptance | ember graphql mocking', function (hooks) {
   });
 });
 ```
+
+> **NOTE:** Calling `mockResolvers` multiple times within a single test, will simply merge all resolvers into a single root.
 
 💡 Working versions of these code examples can be found in [this addon's `tests` folder](./tests/).
 
