@@ -1,10 +1,10 @@
-import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
-import { setupApplicationTest } from 'ember-qunit';
 import {
   mockResolvers,
   setupGraphqlTest,
 } from '@bagaar/ember-graphql-mocking/test-support';
+import { visit, currentURL } from '@ember/test-helpers';
+import { setupApplicationTest } from 'dummy/tests/helpers';
+import { module, test } from 'qunit';
 
 module('Acceptance | ember graphql mocking', function (hooks) {
   setupApplicationTest(hooks);
