@@ -1,6 +1,17 @@
 
 
 
+
+## v0.5.0 (2022-06-24)
+
+#### :boom: Breaking Change
+* [#29](https://github.com/Bagaar/ember-graphql-mocking/pull/29) Update `msw` to v0.42.3 ([@bertdeblock](https://github.com/bertdeblock))
+* [#27](https://github.com/Bagaar/ember-graphql-mocking/pull/27) Drop support for Ember v3.24 ([@bertdeblock](https://github.com/bertdeblock))
+* [#26](https://github.com/Bagaar/ember-graphql-mocking/pull/26) Drop support for Node v12 ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
 ## v0.4.1 (2022-02-09)
 
 #### :bug: Bug Fix
