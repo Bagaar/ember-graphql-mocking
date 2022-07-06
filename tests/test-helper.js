@@ -11,6 +11,6 @@ setApplication(Application.create(config.APP));
 
 setup(QUnit.assert);
 
-setupEmberGraphqlMocking(schema);
+setupEmberGraphqlMocking(QUnit, schema);
 
 start();
