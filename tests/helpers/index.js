@@ -1,3 +1,4 @@
+import { setupGraphqlTest } from '@bagaar/ember-graphql-mocking/test-support';
 import {
   setupApplicationTest as upstreamSetupApplicationTest,
   setupRenderingTest as upstreamSetupRenderingTest,
@@ -10,6 +11,7 @@ import {
 
 function setupApplicationTest(hooks, options) {
   upstreamSetupApplicationTest(hooks, options);
+  setupGraphqlTest(hooks);
 
   // Additional setup for application tests can be done here.
   //
