@@ -2,6 +2,20 @@
 
 
 
+
+## v0.6.0 (2022-09-05)
+
+#### :boom: Breaking Change
+* [#38](https://github.com/Bagaar/ember-graphql-mocking/pull/38) Make `setupEmberGraphqlMocking` async ([@bertdeblock](https://github.com/bertdeblock))
+* [#37](https://github.com/Bagaar/ember-graphql-mocking/pull/37) Update `graphql` and `msw` dependencies ([@bertdeblock](https://github.com/bertdeblock))
+* [#34](https://github.com/Bagaar/ember-graphql-mocking/pull/34) Update `msw` to v0.43.0 ([@bertdeblock](https://github.com/bertdeblock))
+
+#### :bug: Bug Fix
+* [#38](https://github.com/Bagaar/ember-graphql-mocking/pull/38) Make `setupEmberGraphqlMocking` async ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
 ## v0.5.0 (2022-06-24)
 
 #### :boom: Breaking Change
