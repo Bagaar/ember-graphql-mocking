@@ -2,8 +2,8 @@
 
 ## Installation
 
-* `git clone <repository-url>`
-* `cd @bagaar/ember-graphql-mocking`
+* `git clone git@github.com:Bagaar/ember-graphql-mocking.git`
+* `cd ember-graphql-mocking`
 * `yarn install`
 
 ## Linting
