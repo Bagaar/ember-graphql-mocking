@@ -25,7 +25,7 @@ ember install @bagaar/ember-graphql-mocking
 In `tests/test-helper.js`:
 1. Import `setupEmberGraphqlMocking`
 2. Import your GraphQL schema
-3. Call `setupEmberGraphqlMocking` with `QUnit` and your GraphQL schema, _before_ calling `start`
+3. Call `setupEmberGraphqlMocking` with your GraphQL schema
 
 ```javascript
 // tests/test-helper.js
@@ -39,24 +39,28 @@ import { start } from 'ember-qunit';
 import { setupEmberGraphqlMocking } from '@bagaar/ember-graphql-mocking/test-support'; // 1.
 import schema from 'my-app/graphql/schema'; // 2.
 
+QUnit.begin(() => setupEmberGraphqlMocking(schema)); // 3.
+
 setApplication(Application.create(config.APP));
 
 setup(QUnit.assert);
 
-setupEmberGraphqlMocking(QUnit, schema); // 3.
-
 start();
 ```
+
+> **NOTE:** Make sure to use `QUnit.begin`, as `setupEmberGraphqlMocking` returns a Promise.
 
 If you want to pass along additional [start options](https://mswjs.io/docs/api/setup-worker/start#options)
 to MSW's service worker, you can do so by defining an `mswStartOptions` object:
 
 ```js
-setupEmberGraphqlMocking(QUnit, schema, {
-  mswStartOptions: {
-    // Additional MSW start options...
-  },
-});
+QUnit.begin(() =>
+  setupEmberGraphqlMocking(schema, {
+    mswStartOptions: {
+      // Additional MSW start options...
+    },
+  })
+);
 ```
 
 ### 2. Write an Acceptance Test
