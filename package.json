@@ -38,7 +38,7 @@
     "ember-cli-babel": "^7.26.11",
     "graphql": "^16.6.0",
     "lodash.merge": "^4.6.2",
-    "msw": "^0.47.0"
+    "msw": "^0.47.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
