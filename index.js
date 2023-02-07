@@ -1,8 +1,5 @@
 'use strict';
 
-const funnel = require('broccoli-funnel');
-const mergeTrees = require('broccoli-merge-trees');
-
 module.exports = {
   name: require('./package').name,
 
@@ -13,6 +10,9 @@ module.exports = {
     if (shouldExcludePublicFiles) {
       return;
     }
+
+    const funnel = require('broccoli-funnel');
+    const mergeTrees = require('broccoli-merge-trees');
 
     return mergeTrees([tree, funnel(host.trees.public)], {
       overwrite: true,
