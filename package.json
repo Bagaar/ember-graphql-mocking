@@ -44,8 +44,8 @@
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.1.2",
-    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@ember/optional-features": "^2.0.0",
     "@ember/string": "^3.0.1",
     "@ember/test-helpers": "^2.9.3",
@@ -78,13 +78,13 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-qunit": "^7.3.4",
-    "husky": "^8.0.1",
+    "husky": "^8.0.3",
     "loader.js": "^4.7.0",
     "msw": "^1.0.1",
     "prettier": "^2.8.3",
     "qunit": "^2.19.3",
     "qunit-dom": "^2.0.0",
-    "release-it": "^15.4.1",
+    "release-it": "^15.6.0",
     "webpack": "^5.75.0"
   },
   "engines": {
