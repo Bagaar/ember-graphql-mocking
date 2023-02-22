@@ -3,6 +3,23 @@
 
 
 
+
+## v0.7.0 (2023-02-22)
+
+#### :boom: Breaking Change
+* [#104](https://github.com/Bagaar/ember-graphql-mocking/pull/104) Update `msw` to v1 and make it a peer dependency ([@gvdp](https://github.com/gvdp))
+
+#### :rocket: Enhancement
+* [#104](https://github.com/Bagaar/ember-graphql-mocking/pull/104) Update `msw` to v1 and make it a peer dependency ([@gvdp](https://github.com/gvdp))
+* [#100](https://github.com/Bagaar/ember-graphql-mocking/pull/100) Speed up requiring `index.js` file ([@bertdeblock](https://github.com/bertdeblock))
+
+#### :memo: Documentation
+* [#106](https://github.com/Bagaar/ember-graphql-mocking/pull/106) Update compatibility and installation section ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 2
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+- [@gvdp](https://github.com/gvdp)
+
 ## v0.6.0 (2022-09-05)
 
 #### :boom: Breaking Change
