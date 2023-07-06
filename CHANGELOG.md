@@ -4,6 +4,15 @@
 
 
 
+
+## v0.8.0 (2023-07-06)
+
+#### :boom: Breaking Change
+* [#143](https://github.com/Bagaar/ember-graphql-mocking/pull/143) Drop support for Ember versions below v4.4 and Node v14 ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
 ## v0.7.0 (2023-02-22)
 
 #### :boom: Breaking Change
