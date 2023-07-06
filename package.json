@@ -95,7 +95,7 @@
     "msw": "^1.0.1"
   },
   "engines": {
-    "node": "14.* || 16.* || >= 18"
+    "node": "16.* || >= 18"
   },
   "publishConfig": {
     "access": "public",
