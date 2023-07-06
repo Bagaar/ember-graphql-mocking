@@ -60,10 +60,11 @@ function createWorker() {
 function createGraphqlOperationHandler(schemaDocument) {
   const schema = buildASTSchema(schemaDocument);
   const graphqlOperation = mswGraphql.operation(async (req, res, ctx) => {
+    const { query } = await req.json();
     const queryResult = await graphql({
       rootValue: root,
       schema,
-      source: req.body.query,
+      source: query,
       variableValues: req.variables,
     });
 
