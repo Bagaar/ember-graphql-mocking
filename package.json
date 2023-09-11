@@ -42,7 +42,7 @@
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.22.5",
+    "@babel/eslint-parser": "^7.22.15",
     "@babel/plugin-proposal-decorators": "^7.22.5",
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
