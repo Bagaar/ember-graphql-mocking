@@ -37,7 +37,7 @@ export function setupGraphqlTest(hooks) {
 export function mockResolvers(resolvers) {
   assert(
     'Cannot call `mockResolvers` before calling `setupGraphqlTest`. Please make sure to call `setupGraphqlTest(hooks);`.',
-    isSetupGraphqlTestCalled
+    isSetupGraphqlTestCalled,
   );
 
   root = { ...root, ...resolvers };
