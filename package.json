@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.15",
-    "@babel/plugin-proposal-decorators": "^7.23.2",
+    "@babel/plugin-proposal-decorators": "^7.23.3",
     "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
     "@ember/optional-features": "^2.0.0",
