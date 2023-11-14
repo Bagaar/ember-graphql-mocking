@@ -1,3 +1,4 @@
+import { gql } from '@apollo/client/core';
 import {
   destroyWorker,
   setupEmberGraphqlMocking,
@@ -5,10 +6,21 @@ import {
 import { setApplication } from '@ember/test-helpers';
 import Application from 'dummy/app';
 import config from 'dummy/config/environment';
-import schema from 'dummy/graphql/schema';
 import { start } from 'ember-qunit';
 import * as QUnit from 'qunit';
 import { setup } from 'qunit-dom';
+
+const schema = gql`
+  type User {
+    id: ID!
+    firstName: String!
+    lastName: String!
+  }
+
+  type Query {
+    me: User
+  }
+`;
 
 QUnit.begin(() => setupEmberGraphqlMocking(schema));
 

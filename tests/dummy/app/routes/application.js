@@ -1,11 +1,24 @@
+import { gql } from '@apollo/client/core';
 import Route from '@ember/routing/route';
-import { inject as service } from '@ember/service';
-import meQuery from 'dummy/graphql/user/me';
+import { client } from 'dummy/apollo';
+
+const meQuery = gql`
+  query Me {
+    me {
+      id
+      firstName
+      lastName
+    }
+  }
+`;
 
 export default class ApplicationRoute extends Route {
-  @service apollo;
+  async model() {
+    const { data } = await client.query({
+      fetchPolicy: 'no-cache',
+      query: meQuery,
+    });
 
-  model() {
-    return this.apollo.query({ query: meQuery }, 'me');
+    return data.me;
   }
 }
