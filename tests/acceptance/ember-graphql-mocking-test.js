@@ -58,6 +58,7 @@ module('Acceptance | ember graphql mocking', function (hooks) {
     });
 
     try {
+      console.error('The following error is expected:');
       await visit('/');
     } catch (e) {
       error = e;

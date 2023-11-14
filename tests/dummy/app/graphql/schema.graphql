@@ -1,9 +1,0 @@
-type User {
-  id: ID!
-  firstName: String!
-  lastName: String!
-}
-
-type Query {
-  me: User
-}
