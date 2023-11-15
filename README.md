@@ -120,7 +120,8 @@ module('Acceptance | ember graphql mocking', function (hooks) {
 > [!NOTE]
 > Calling `mockResolvers` multiple times within a single test, will simply merge all resolvers into a single root.
 
-💡 Working versions of these code examples can be found in [this addon's `tests` folder](./tests/).
+> [!NOTE]
+> Working versions of these code examples can be found in [this addon's `tests` folder](./tests/).
 
 ## Contributing
 
