@@ -1,7 +1,8 @@
 import { assert } from '@ember/debug';
 import { buildASTSchema, graphql } from 'graphql';
 import merge from 'lodash.merge';
-import { graphql as mswGraphql, setupWorker } from 'msw';
+import { graphql as mswGraphql, HttpResponse } from 'msw';
+import { setupWorker } from 'msw/browser';
 
 const IS_TESTEM = Boolean(window.Testem);
 const DEFAULT_OPTIONS = {
@@ -59,16 +60,16 @@ function createWorker() {
 
 function createGraphqlOperationHandler(schemaDocument) {
   const schema = buildASTSchema(schemaDocument);
-  const graphqlOperation = mswGraphql.operation(async (req, res, ctx) => {
-    const { query } = await req.json();
-    const queryResult = await graphql({
+  const graphqlOperation = mswGraphql.operation(async ({ request }) => {
+    const { query, variables } = await request.json();
+    const { data, errors } = await graphql({
       rootValue: root,
       schema,
       source: query,
-      variableValues: req.variables,
+      variableValues: variables,
     });
 
-    return res(ctx.data(queryResult.data), ctx.errors(queryResult.errors));
+    return HttpResponse.json({ data, errors });
   });
 
   worker.use(graphqlOperation);
