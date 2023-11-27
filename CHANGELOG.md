@@ -5,6 +5,24 @@
 
 
 
+
+## v0.9.0 (2023-11-27)
+
+#### :boom: Breaking Change
+* [#191](https://github.com/Bagaar/ember-graphql-mocking/pull/191) Support MSW v2 ([@bertdeblock](https://github.com/bertdeblock))
+* [#189](https://github.com/Bagaar/ember-graphql-mocking/pull/189) Drop support for Ember v4.4 ([@bertdeblock](https://github.com/bertdeblock))
+* [#177](https://github.com/Bagaar/ember-graphql-mocking/pull/177) Drop support for Node.js v16 ([@bertdeblock](https://github.com/bertdeblock))
+
+#### :rocket: Enhancement
+* [#191](https://github.com/Bagaar/ember-graphql-mocking/pull/191) Support MSW v2 ([@bertdeblock](https://github.com/bertdeblock))
+
+#### :house: Internal
+* [#176](https://github.com/Bagaar/ember-graphql-mocking/pull/176) Update dependencies ([@bertdeblock](https://github.com/bertdeblock))
+* [#175](https://github.com/Bagaar/ember-graphql-mocking/pull/175) Update to Ember v5.4 ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
 ## v0.8.0 (2023-07-06)
 
 #### :boom: Breaking Change
