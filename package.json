@@ -37,7 +37,7 @@
     "@babel/core": "^7.23.3",
     "broccoli-funnel": "^3.0.5",
     "broccoli-merge-trees": "^4.2.0",
-    "ember-auto-import": "^2.6.3",
+    "ember-auto-import": "^2.7.0",
     "ember-cli-babel": "^8.2.0",
     "graphql": "^16.8.1",
     "lodash.merge": "^4.6.2"
@@ -80,7 +80,7 @@
     "eslint-plugin-qunit": "^8.0.1",
     "husky": "^8.0.3",
     "loader.js": "^4.7.0",
-    "msw": "^1.2.2",
+    "msw": "^2.0.6",
     "prettier": "^3.1.0",
     "qunit": "^2.20.0",
     "qunit-dom": "^3.0.0",
@@ -92,7 +92,7 @@
   },
   "peerDependencies": {
     "ember-source": ">= 4.8.0",
-    "msw": "^1.0.1"
+    "msw": "^2.0.0"
   },
   "engines": {
     "node": ">= 18"
