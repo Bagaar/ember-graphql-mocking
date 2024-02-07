@@ -8,20 +8,4 @@ module.exports = {
       enableTypeScriptTransform: true,
     },
   },
-
-  treeForPublic(tree) {
-    const host = this._findHost();
-    const shouldExcludePublicFiles = host.env === 'production';
-
-    if (shouldExcludePublicFiles) {
-      return;
-    }
-
-    const funnel = require('broccoli-funnel');
-    const mergeTrees = require('broccoli-merge-trees');
-
-    return mergeTrees([tree, funnel(host.trees.public)], {
-      overwrite: true,
-    });
-  },
 };

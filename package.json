@@ -53,8 +53,6 @@
   },
   "dependencies": {
     "@babel/core": "^7.23.3",
-    "broccoli-funnel": "^3.0.5",
-    "broccoli-merge-trees": "^4.2.0",
     "ember-auto-import": "^2.7.0",
     "ember-cli-babel": "^8.2.0",
     "lodash.merge": "^4.6.2"
@@ -133,7 +131,7 @@
     "configPath": "tests/dummy/config"
   },
   "msw": {
-    "workerDirectory": "public"
+    "workerDirectory": "tests/dummy/public"
   },
   "release-it": {
     "plugins": {
