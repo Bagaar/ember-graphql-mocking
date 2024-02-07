@@ -20,13 +20,16 @@ let isSetupGraphqlTestCalled = false;
 let root = null;
 let worker = null;
 
-export function setupEmberGraphqlMocking(schemaDocument, providedOptions) {
+export async function setupEmberGraphqlMocking(
+  schemaDocument,
+  providedOptions,
+) {
   const options = merge({}, DEFAULT_OPTIONS, providedOptions);
 
   createWorker();
   createGraphqlOperationHandler(schemaDocument);
 
-  return startWorker(options.mswStartOptions);
+  await startWorker(options.mswStartOptions);
 }
 
 export function setupGraphqlTest(hooks) {
@@ -75,8 +78,8 @@ function createGraphqlOperationHandler(schemaDocument) {
   worker.use(graphqlOperation);
 }
 
-function startWorker(mswStartOptions) {
-  return worker.start(mswStartOptions);
+async function startWorker(mswStartOptions) {
+  await worker.start(mswStartOptions);
 }
 
 function clearRoot() {
