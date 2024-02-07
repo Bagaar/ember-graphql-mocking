@@ -24,6 +24,9 @@
 /RELEASE.md
 /testem.js
 /tests/
+/types/
+/tsconfig.declarations.json
+/tsconfig.json
 /yarn-error.log
 /yarn.lock
 .gitkeep
