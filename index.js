@@ -3,6 +3,12 @@
 module.exports = {
   name: require('./package').name,
 
+  options: {
+    'ember-cli-babel': {
+      enableTypeScriptTransform: true,
+    },
+  },
+
   treeForPublic(tree) {
     const host = this._findHost();
     const shouldExcludePublicFiles = host.env === 'production';
