@@ -58,7 +58,7 @@
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
-    "@apollo/client": "^3.8.7",
+    "@apollo/client": "^3.9.4",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@ember/optional-features": "^2.0.0",
