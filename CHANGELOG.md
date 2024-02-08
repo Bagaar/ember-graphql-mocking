@@ -6,6 +6,23 @@
 
 
 
+
+## v0.10.0 (2024-02-08)
+
+#### :boom: Breaking Change
+* [#195](https://github.com/Bagaar/ember-graphql-mocking/pull/195) Remove automatic inclusion/exclusion of msw's worker file ([@bertdeblock](https://github.com/bertdeblock))
+* [#194](https://github.com/Bagaar/ember-graphql-mocking/pull/194) Convert to TS ([@bertdeblock](https://github.com/bertdeblock))
+* [#193](https://github.com/Bagaar/ember-graphql-mocking/pull/193) Don't leak msw `worker.start` return value ([@bertdeblock](https://github.com/bertdeblock))
+
+#### :rocket: Enhancement
+* [#194](https://github.com/Bagaar/ember-graphql-mocking/pull/194) Convert to TS ([@bertdeblock](https://github.com/bertdeblock))
+
+#### :bug: Bug Fix
+* [#193](https://github.com/Bagaar/ember-graphql-mocking/pull/193) Don't leak msw `worker.start` return value ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
 ## v0.9.0 (2023-11-27)
 
 #### :boom: Breaking Change
