@@ -1,6 +1,6 @@
-# Ember GraphQL Mocking
+# @bagaar/ember-graphql-mocking
 
-[![CI](https://github.com/Bagaar/ember-graphql-mocking/workflows/CI/badge.svg)](https://github.com/Bagaar/ember-graphql-mocking/actions?query=workflow%3ACI)
+[![CI](https://github.com/bagaar/ember-graphql-mocking/workflows/CI/badge.svg)](https://github.com/bagaar/ember-graphql-mocking/actions?query=workflow%3ACI)
 [![NPM Version](https://badge.fury.io/js/%40bagaar%2Fember-graphql-mocking.svg)](https://badge.fury.io/js/%40bagaar%2Fember-graphql-mocking)
 
 Ember addon for mocking GraphQL requests using [Mock Service Worker (MSW)](https://github.com/mswjs/msw).
@@ -8,8 +8,7 @@ Ember addon for mocking GraphQL requests using [Mock Service Worker (MSW)](https
 ## Compatibility
 
 - Ember.js v4.8 or above
-- Ember CLI v4.8 or above
-- Node.js v18 or above
+- Embroider or ember-auto-import v2
 - MSW v2 or above
 
 ## Installation
@@ -121,7 +120,7 @@ module('Acceptance | ember graphql mocking', function (hooks) {
 > Calling `mockResolvers` multiple times within a single test, will simply merge all resolvers into a single root.
 
 > [!NOTE]
-> Working versions of these code examples can be found in [this addon's `tests` folder](./tests/).
+> Working versions of these code examples can be found in [this addon's test app](./test-app/).
 
 ## Contributing
 

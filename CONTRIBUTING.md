@@ -2,24 +2,30 @@
 
 ## Installation
 
-* `git clone git@github.com:Bagaar/ember-graphql-mocking.git`
-* `cd ember-graphql-mocking`
-* `yarn install`
+- `git clone <repository-url>`
+- `cd ember-graphql-mocking`
+- `pnpm install`
 
 ## Linting
 
-* `yarn lint`
-* `yarn lint:fix`
+- `pnpm lint`
+- `pnpm lint:fix`
+
+## Building the addon
+
+- `cd ember-graphql-mocking`
+- `pnpm build`
 
 ## Running tests
 
-* `yarn test` – Runs the test suite on the current Ember version
-* `yarn test:ember --server` – Runs the test suite in "watch mode"
-* `yarn test:ember-compatibility` – Runs the test suite against multiple Ember versions
+- `cd test-app`
+- `pnpm test` – Runs the test suite on the current Ember version
+- `pnpm test:watch` – Runs the test suite in "watch mode"
 
-## Running the dummy application
+## Running the test application
 
-* `yarn start`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+- `cd test-app`
+- `pnpm start`
+- Visit the test application at [http://localhost:4200](http://localhost:4200).
 
 For more information on using ember-cli, visit [https://cli.emberjs.com/release/](https://cli.emberjs.com/release/).
