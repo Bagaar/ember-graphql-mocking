@@ -1,3 +1,12 @@
+
+## v0.11.0 (2024-03-06)
+
+#### :boom: Breaking Change
+* [#196](https://github.com/Bagaar/ember-graphql-mocking/pull/196) Convert to v2 addon ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
 ## v0.10.0 (2024-02-08)
 
 #### :boom: Breaking Change
