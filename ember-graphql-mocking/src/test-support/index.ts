@@ -1,5 +1,4 @@
 import { assert } from '@ember/debug';
-import { type setupApplicationTest } from 'ember-qunit';
 import { buildASTSchema, graphql, type DocumentNode } from 'graphql';
 import merge from 'lodash.merge';
 import { graphql as mswGraphql, HttpResponse } from 'msw';
@@ -10,6 +9,11 @@ interface Options {
 }
 
 type WindowWithTestem = typeof window & { Testem: unknown };
+type Hooks = {
+  after(fn: () => void | Promise<void>): void;
+  afterEach(fn: () => void | Promise<void>): void;
+  before(fn: () => void | Promise<void>): void;
+};
 
 const IS_TESTEM = Boolean((window as WindowWithTestem).Testem);
 const DEFAULT_OPTIONS: Options = {
@@ -39,9 +43,7 @@ export async function setupEmberGraphqlMocking(
   await startWorker(options.mswStartOptions);
 }
 
-export function setupGraphqlTest(
-  hooks: Parameters<typeof setupApplicationTest>[0],
-) {
+export function setupGraphqlTest(hooks: Hooks) {
   assert(
     'Cannot call `setupGraphqlTest` without providing the `hooks` argument. Please make sure to call `setupGraphqlTest(hooks);`.',
     hooks,
