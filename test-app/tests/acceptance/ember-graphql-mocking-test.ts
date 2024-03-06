@@ -3,7 +3,7 @@ import { visit } from '@ember/test-helpers';
 import { setupApplicationTest } from 'test-app/tests/helpers';
 import { module, test } from 'qunit';
 
-module('Acceptance | ember graphql mocking', function (hooks) {
+module('Acceptance | ember-graphql-mocking', function (hooks) {
   setupApplicationTest(hooks);
 
   test('it works', async function (assert) {

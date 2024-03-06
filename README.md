@@ -27,7 +27,7 @@ yarn add -D @bagaar/ember-graphql-mocking msw
 
 ## Usage
 
-### 1. Set up Ember GraphQL Mocking
+### 1. Set up @bagaar/ember-graphql-mocking
 
 In `tests/test-helper.js`:
 1. Import `setupEmberGraphqlMocking`
@@ -92,7 +92,7 @@ import { visit, currentURL } from '@ember/test-helpers';
 import { setupApplicationTest } from 'my-app/tests/helpers';
 import { mockResolvers, setupGraphqlTest } from '@bagaar/ember-graphql-mocking/test-support'; // 1.
 
-module('Acceptance | ember graphql mocking', function (hooks) {
+module('Acceptance | ember-graphql-mocking', function (hooks) {
   setupApplicationTest(hooks);
   setupGraphqlTest(hooks); // 2.
 
