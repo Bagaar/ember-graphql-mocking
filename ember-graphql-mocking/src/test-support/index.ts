@@ -1,6 +1,5 @@
 import { assert } from '@ember/debug';
 import { buildASTSchema, graphql, type DocumentNode } from 'graphql';
-import merge from 'lodash.merge';
 import { graphql as mswGraphql, HttpResponse } from 'msw';
 import { setupWorker, type SetupWorker, type StartOptions } from 'msw/browser';
 
@@ -9,10 +8,12 @@ interface Options {
 }
 
 type WindowWithTestem = typeof window & { Testem: unknown };
+
 type Hooks = {
   after(fn: () => void | Promise<void>): void;
   afterEach(fn: () => void | Promise<void>): void;
   before(fn: () => void | Promise<void>): void;
+  beforeEach(fn: () => void | Promise<void>): void;
 };
 
 const IS_TESTEM = Boolean((window as WindowWithTestem).Testem);
@@ -30,17 +31,15 @@ const DEFAULT_OPTIONS: Options = {
 let isSetupGraphqlTestCalled = false;
 let root: object | null = null;
 let worker: SetupWorker | null = null;
+let options: Options | null = null;
 
 export async function setupEmberGraphqlMocking(
   schemaDocument: DocumentNode,
   providedOptions?: Options,
 ) {
-  const options = merge({}, DEFAULT_OPTIONS, providedOptions);
-
+  options = { ...DEFAULT_OPTIONS, ...providedOptions };
   createWorker();
   createGraphqlOperationHandler(schemaDocument);
-
-  await startWorker(options.mswStartOptions);
 }
 
 export function setupGraphqlTest(hooks: Hooks) {
@@ -57,7 +56,14 @@ export function setupGraphqlTest(hooks: Hooks) {
     isSetupGraphqlTestCalled = false;
   });
 
-  hooks.afterEach(clearRoot);
+  hooks.beforeEach(async () => {
+    await startWorker(options?.mswStartOptions || {});
+  });
+
+  hooks.afterEach(() => {
+    stopWorker();
+    clearRoot();
+  });
 }
 
 export function mockResolvers(resolvers: object) {
@@ -78,15 +84,13 @@ export function getWorker() {
   return worker;
 }
 
-export function destroyWorker() {
+export function stopWorker() {
   assert(
     'Cannot call `destroyWorker` before calling `setupEmberGraphqlMocking`. Please make sure to call `setupEmberGraphqlMocking(yourSchemaDocument[, yourProvidedOptions]);`.',
     worker,
   );
 
   worker.stop();
-
-  worker = null;
 }
 
 function createWorker() {
@@ -110,6 +114,7 @@ function createGraphqlOperationHandler(schemaDocument: DocumentNode) {
       variableValues: variables,
     });
 
+    // @ts-expect-error latest versions of msw return a type which is ObjMap<unknown> | null | undefined, which seems incompatible with the .json() method
     return HttpResponse.json({ data, errors });
   });
 
