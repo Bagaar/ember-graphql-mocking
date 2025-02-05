@@ -1,5 +1,18 @@
 # Changelog
 
+## Release (2025-02-05)
+
+@bagaar/ember-graphql-mocking 0.11.1 (patch)
+
+#### :house: Internal
+* Other
+  * [#198](https://github.com/Bagaar/ember-graphql-mocking/pull/198) Set up Release Plan ([@bertdeblock](https://github.com/bertdeblock))
+* `@bagaar/ember-graphql-mocking`
+  * [#197](https://github.com/Bagaar/ember-graphql-mocking/pull/197) Update `release-it` setup ([@bertdeblock](https://github.com/bertdeblock))
+
+#### Committers: 1
+- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))
+
 ## v0.11.0 (2024-03-06)
 
 #### :boom: Breaking Change

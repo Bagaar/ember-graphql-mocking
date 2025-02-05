@@ -1,0 +1,17 @@
+{
+  "solution": {
+    "@bagaar/ember-graphql-mocking": {
+      "impact": "patch",
+      "oldVersion": "0.11.0",
+      "newVersion": "0.11.1",
+      "constraints": [
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./ember-graphql-mocking/package.json"
+    }
+  },
+  "description": "## Release (2025-02-05)\n\n@bagaar/ember-graphql-mocking 0.11.1 (patch)\n\n#### :house: Internal\n* Other\n  * [#198](https://github.com/Bagaar/ember-graphql-mocking/pull/198) Set up Release Plan ([@bertdeblock](https://github.com/bertdeblock))\n* `@bagaar/ember-graphql-mocking`\n  * [#197](https://github.com/Bagaar/ember-graphql-mocking/pull/197) Update `release-it` setup ([@bertdeblock](https://github.com/bertdeblock))\n\n#### Committers: 1\n- Bert De Block ([@bertdeblock](https://github.com/bertdeblock))\n"
+}
