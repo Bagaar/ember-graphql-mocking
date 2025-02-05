@@ -22,7 +22,7 @@
     "release-plan": "^0.8.0"
   },
   "volta": {
-    "node": "18.19.1"
+    "node": "20.12.2"
   },
   "pnpm": {
     "overrides": {
