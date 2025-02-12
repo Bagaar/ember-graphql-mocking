@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2025-02-05)
 
 @bagaar/ember-graphql-mocking 0.11.1 (patch)
