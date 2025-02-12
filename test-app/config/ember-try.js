@@ -1,7 +1,7 @@
 'use strict';
 
 const getChannelURL = require('ember-source-channel-url');
-const { embroiderSafe } = require('@embroider/test-setup');
+const { embroiderSafe, embroiderOptimized } = require('@embroider/test-setup');
 
 module.exports = async function () {
   return {
@@ -56,9 +56,7 @@ module.exports = async function () {
         },
       },
       embroiderSafe(),
-      // scenario is failing because of this change: https://github.com/embroider-build/embroider/pull/2210
-      // there is a follow up ticket to remove the deprecated props, I'm assuming that will fix this build scenario: https://github.com/embroider-build/embroider/pull/2246
-      // embroiderOptimized(),
+      embroiderOptimized(),
     ],
   };
 };
