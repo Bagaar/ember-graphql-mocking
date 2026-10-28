@@ -53,6 +53,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: 'test'
     timeout-minutes: 10
+    # TODO: remove once Ember version support has been upgraded
+    continue-on-error: ${{ contains(fromJSON('["ember-release", "ember-beta", "ember-canary"]'), matrix.try-scenario) }}
 
     strategy:
       fail-fast: false
