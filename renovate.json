@@ -9,6 +9,9 @@
     ":pinAllExceptPeerDependencies"
   ],
   "separateMultipleMajor": true,
+  "labels": [
+    "internal"
+  ],
   "packageRules": [
     {
       "matchManagers": [
