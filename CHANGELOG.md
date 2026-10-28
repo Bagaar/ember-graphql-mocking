@@ -1,5 +1,19 @@
 # Changelog
 
+## Release (2026-10-28)
+
+* @bagaar/ember-graphql-mocking 0.11.3 (patch)
+
+#### :house: Internal
+* Other
+  * [#212](https://github.com/Bagaar/ember-graphql-mocking/pull/212) chore: dont ignore renovate bot as a committer for the changelog ([@gvdp](https://github.com/gvdp))
+* `@bagaar/ember-graphql-mocking`
+  * [#208](https://github.com/Bagaar/ember-graphql-mocking/pull/208) chore(deps): pin dependencies ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 2
+- Renovate [Bot] ([@renovate](https://github.com/apps/renovate))
+- [@gvdp](https://github.com/gvdp)
+
 ## Release (2025-02-05)
 
 @bagaar/ember-graphql-mocking 0.11.1 (patch)
