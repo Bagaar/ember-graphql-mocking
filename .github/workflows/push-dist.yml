@@ -18,11 +18,11 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v4.4.0
+      - uses: pnpm/action-setup@v3.0.0
+      - uses: actions/setup-node@v4.4.0
         with:
-          node-version: 24
+          node-version: 24.22.1
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
