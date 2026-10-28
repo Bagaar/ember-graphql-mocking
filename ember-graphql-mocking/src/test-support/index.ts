@@ -114,7 +114,6 @@ function createGraphqlOperationHandler(schemaDocument: DocumentNode) {
       variableValues: variables,
     });
 
-    // @ts-expect-error latest versions of msw return a type which is ObjMap<unknown> | null | undefined, which seems incompatible with the .json() method
     return HttpResponse.json({ data, errors });
   });
 
