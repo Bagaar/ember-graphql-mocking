@@ -3,6 +3,7 @@
   "repository": "https://github.com/bagaar/ember-graphql-mocking",
   "license": "MIT",
   "author": "Bagaar",
+  "packageManager": "pnpm@10.19.0",
   "scripts": {
     "build": "pnpm --filter ember-graphql-mocking build",
     "lint": "pnpm --filter '*' lint",
