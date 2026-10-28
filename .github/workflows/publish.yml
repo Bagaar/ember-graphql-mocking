@@ -38,3 +38,7 @@ jobs:
         run: NPM_CONFIG_PROVENANCE=true pnpm release-plan publish
         env:
           GITHUB_AUTH: ${{ secrets.GITHUB_TOKEN }}
+      # TODO: remove once publishing through trusted publishing works
+      - name: Print npm debug log
+        if: failure()
+        run: cat ~/.npm/_logs/*-debug-0.log
