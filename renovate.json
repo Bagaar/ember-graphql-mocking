@@ -1,0 +1,98 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    "group:glimmer",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)",
+    "schedule:weekends",
+    ":pinAllExceptPeerDependencies"
+  ],
+  "separateMultipleMajor": true,
+  "packageRules": [
+    {
+      "matchManagers": [
+        "npm"
+      ],
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin"
+      ],
+      "automerge": true
+    },
+    {
+      "matchManagers": [
+        "npm"
+      ],
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "pin"
+      ],
+      "automerge": true
+    },
+    {
+      "automerge": true,
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "pin"
+      ],
+      "matchPackageNames": [
+        "pnpm",
+        "node"
+      ],
+      "rebaseWhen": "behind-base-branch"
+    },
+    {
+      "matchManagers": [
+        "npm"
+      ],
+      "matchCurrentVersion": "<1.0.0",
+      "automerge": false
+    },
+    {
+      "automerge": false,
+      "matchPackageNames": [
+        "ember-cli",
+        "ember-data",
+        "ember-source"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor"
+      ]
+    },
+    {
+      "matchDepTypes": [
+        "action"
+      ],
+      "pinDigests": false
+    },
+    {
+      "matchFileNames": [
+        "ember-graphql-mocking/package.json"
+      ],
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "rangeStrategy": "widen"
+    }
+  ],
+  "commitMessageExtra": "from {{currentVersion}} to {{newVersion}}",
+  "patch": {
+    "semanticCommitScope": "deps-patch"
+  },
+  "minor": {
+    "semanticCommitScope": "deps-minor"
+  },
+  "major": {
+    "semanticCommitScope": "deps-major"
+  }
+}
