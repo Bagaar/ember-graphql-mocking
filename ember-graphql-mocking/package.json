@@ -7,7 +7,10 @@
     "graphql",
     "msw"
   ],
-  "repository": "https://github.com/bagaar/ember-graphql-mocking",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bagaar/ember-graphql-mocking.git"
+  },
   "license": "MIT",
   "author": "Bagaar",
   "exports": {
