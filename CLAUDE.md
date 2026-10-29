@@ -17,12 +17,11 @@ Run from the repo root unless noted (Node version pinned via Volta in root `pack
 - `pnpm build` — build the addon (`rollup` for JS + `glint --declaration` for types)
 - `pnpm start` — watch-build the addon and serve the test app concurrently (http://localhost:4200)
 - `pnpm lint` / `pnpm lint:fix` — lint all packages (eslint, ember-template-lint, glint/tsc, stylelint in test-app)
-- `pnpm test` — in test-app this runs lint **and** `ember test`
-- `pnpm test:ember` — run only the Ember test suite
+- `pnpm test` — run the Ember test suite (lint is separate: `pnpm lint`)
 
 Inside `test-app/`:
 
-- `pnpm test:ember` / `ember test` — run tests once
+- `pnpm test` / `ember test` — run tests once
 - `ember test --server` — watch mode
 - `ember test --filter "it merges resolvers"` — run a single test (matches module/test name)
 - `./node_modules/.bin/ember try:one <scenario> --skip-cleanup` — run an ember-try scenario (see `test-app/config/ember-try.js`; CI runs LTS 4.8/4.12/5.4, release, beta, canary, embroider-safe)
