@@ -30,7 +30,7 @@
     "@bagaar/ember-graphql-mocking": "workspace:*",
     "@ember/optional-features": "3.0.0",
     "@ember/string": "3.1.1",
-    "@ember/test-helpers": "4.0.5",
+    "@ember/test-helpers": "5.7.0",
     "@embroider/test-setup": "3.0.3",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
