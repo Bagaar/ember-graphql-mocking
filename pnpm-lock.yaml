@@ -146,10 +146,10 @@ importers:
         specifier: 3.0.3
         version: 3.0.3(@embroider/core@3.5.10(@glint/template@1.11.0)(supports-color@8.1.1))
       '@glimmer/component':
-        specifier: ^1.1.2
+        specifier: 1.1.2
         version: 1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1)
       '@glimmer/tracking':
-        specifier: ^1.1.2
+        specifier: 1.1.2
         version: 1.1.2
       '@glint/environment-ember-loose':
         specifier: 1.5.2
