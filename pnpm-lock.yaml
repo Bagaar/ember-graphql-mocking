@@ -184,9 +184,6 @@ importers:
       ember-cli:
         specifier: 5.6.0
         version: 5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@types/node@26.6.5)(debug@4.4.3(supports-color@8.1.1))(handlebars@4.7.10)(supports-color@8.1.1)(underscore@1.13.8)
-      ember-cli-app-version:
-        specifier: 6.0.1
-        version: 6.0.1(ember-source@5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@8.1.1)
       ember-cli-babel:
         specifier: 8.3.2
         version: 8.3.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1)
@@ -3396,12 +3393,6 @@ packages:
   ember-auto-import@2.13.1:
     resolution: {integrity: sha512-MjxJK2nfCJmmQI/rju2TrycmAa1AxmTarfvygbcrrgW0s4WeZHtbGXCO2z1lW9wfrShqeTo/o+3Mgk+9xcDTWg==}
     engines: {node: 12.* || 14.* || >= 16}
-
-  ember-cli-app-version@6.0.1:
-    resolution: {integrity: sha512-XA1FwkWA5QytmWF0jcJqEr3jcZoiCl9Fb33TZgOVfClL7Voxe+/RwzISEprBRQgbf7j8z1xf8/RJCKfclUy3rQ==}
-    engines: {node: 14.* || 16.* || >= 18}
-    peerDependencies:
-      ember-source: ^3.28.0 || >= 4.0.0
 
   ember-cli-babel-plugin-helpers@1.1.1:
     resolution: {integrity: sha512-sKvOiPNHr5F/60NLd7SFzMpYPte/nnGkq/tMIfXejfKHIhaiIkYFqX8Z9UFTKWLLn+V7NOaby6niNPZUdvKCRw==}
@@ -11207,14 +11198,6 @@ snapshots:
       - '@glint/template'
       - supports-color
       - webpack
-
-  ember-cli-app-version@6.0.1(ember-source@5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@8.1.1):
-    dependencies:
-      ember-cli-babel: 7.26.11(supports-color@8.1.1)
-      ember-source: 5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
-      git-repo-info: 2.1.1
-    transitivePeerDependencies:
-      - supports-color
 
   ember-cli-babel-plugin-helpers@1.1.1: {}
 
