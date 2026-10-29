@@ -90,7 +90,7 @@
     "graphql": "16.14.2",
     "msw": "2.15.0",
     "prettier": "3.9.10",
-    "prettier-plugin-ember-template-tag": "1.1.0",
+    "prettier-plugin-ember-template-tag": "2.1.8",
     "rollup": "4.66.0",
     "rollup-plugin-copy": "3.5.0",
     "typescript": "5.9.3"
