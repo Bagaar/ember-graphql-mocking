@@ -6,7 +6,7 @@
   },
   "license": "MIT",
   "author": "Bagaar",
-  "packageManager": "pnpm@11.28.8",
+  "packageManager": "pnpm@12.15.0",
   "scripts": {
     "build": "pnpm --filter ember-graphql-mocking build",
     "lint": "pnpm --filter '*' lint",
