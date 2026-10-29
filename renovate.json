@@ -79,6 +79,13 @@
       "pinDigests": false
     },
     {
+      "groupName": "stylelint",
+      "matchPackageNames": [
+        "stylelint",
+        "stylelint-*"
+      ]
+    },
+    {
       "matchFileNames": [
         "ember-graphql-mocking/package.json"
       ],
