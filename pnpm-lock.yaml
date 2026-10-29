@@ -140,8 +140,8 @@ importers:
         specifier: 3.1.1
         version: 3.1.1(supports-color@8.1.1)
       '@ember/test-helpers':
-        specifier: 4.0.5
-        version: 4.0.5(@babel/core@7.29.7(supports-color@8.1.1))(@glint/template@1.11.0)(ember-source@5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@8.1.1)
+        specifier: 5.7.0
+        version: 5.7.0(@babel/core@7.29.7(supports-color@8.1.1))
       '@embroider/test-setup':
         specifier: 3.0.3
         version: 3.0.3(@embroider/core@3.5.10(@glint/template@1.11.0)(supports-color@8.1.1))
@@ -216,7 +216,7 @@ importers:
         version: 4.3.0(@babel/core@7.29.7(supports-color@8.1.1))
       ember-qunit:
         specifier: 9.2.0
-        version: 9.2.0(@ember/test-helpers@4.0.5(@babel/core@7.29.7(supports-color@8.1.1))(@glint/template@1.11.0)(ember-source@5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@8.1.1))(qunit@2.26.0)
+        version: 9.2.0(@ember/test-helpers@5.7.0(@babel/core@7.29.7(supports-color@8.1.1)))(qunit@2.26.0)
       ember-resolver:
         specifier: 11.0.1
         version: 11.0.1(ember-source@5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@8.1.1)
@@ -990,10 +990,8 @@ packages:
     resolution: {integrity: sha512-UbXJ+k3QOrYN4SRPHgXCqYIJ+yWWUg1+vr0H4DhdQPTy8LJfyqwZ2tc5uqpSSnEXE+/1KopHBE5J8GDagAg5cg==}
     engines: {node: 12.* || 14.* || >= 16}
 
-  '@ember/test-helpers@4.0.5':
-    resolution: {integrity: sha512-wQtibrTbsTyqkF14m1pFwaLECzda7ObY9HpCPpRghYkgBcnwlD2dBpvfYtamMK1HCh59vEZ3OdrxEBU9jKLyng==}
-    peerDependencies:
-      ember-source: '>= 4.0.0'
+  '@ember/test-helpers@5.7.0':
+    resolution: {integrity: sha512-h77kAJpFQ9fffuLc9+XhoYsk7URDLd7jTLnq7Yk9gGvQ41JupxrGMHoRjyboytSbwngSy+0yXyMhNYfH8ng4xg==}
 
   '@ember/test-waiters@4.1.2':
     resolution: {integrity: sha512-zJwFaHLHjJn6mKoXYVM1SEyMT+U1JpaaSKg3JBmxHJwiIoJRI5djJ/CE33Z7N09mk5JfXd2xdhbd9LBWdlvAzg==}
@@ -8535,19 +8533,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember/test-helpers@4.0.5(@babel/core@7.29.7(supports-color@8.1.1))(@glint/template@1.11.0)(ember-source@5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@8.1.1)':
+  '@ember/test-helpers@5.7.0(@babel/core@7.29.7(supports-color@8.1.1))':
     dependencies:
       '@ember/test-waiters': 4.1.2
       '@embroider/addon-shim': 1.11.0
-      '@embroider/macros': 1.21.4(@babel/core@7.29.7(supports-color@8.1.1))(@glint/template@1.11.0)(supports-color@8.1.1)
       '@simple-dom/interface': 1.4.0
       decorator-transforms: 2.4.0(@babel/core@7.29.7(supports-color@8.1.1))
       dom-element-descriptors: 0.5.1
-      ember-source: 5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
     transitivePeerDependencies:
       - '@babel/core'
-      - '@glint/template'
-      - supports-color
 
   '@ember/test-waiters@4.1.2':
     dependencies:
@@ -11850,9 +11844,9 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
 
-  ember-qunit@9.2.0(@ember/test-helpers@4.0.5(@babel/core@7.29.7(supports-color@8.1.1))(@glint/template@1.11.0)(ember-source@5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@8.1.1))(qunit@2.26.0):
+  ember-qunit@9.2.0(@ember/test-helpers@5.7.0(@babel/core@7.29.7(supports-color@8.1.1)))(qunit@2.26.0):
     dependencies:
-      '@ember/test-helpers': 4.0.5(@babel/core@7.29.7(supports-color@8.1.1))(@glint/template@1.11.0)(ember-source@5.6.0(@babel/core@7.29.7(supports-color@8.1.1))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@8.1.1)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@8.1.1)
+      '@ember/test-helpers': 5.7.0(@babel/core@7.29.7(supports-color@8.1.1))
       '@embroider/addon-shim': 1.11.0
       qunit: 2.26.0
       qunit-theme-ember: 1.0.0
