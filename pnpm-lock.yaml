@@ -125,7 +125,7 @@ importers:
   test-app:
     devDependencies:
       '@apollo/client':
-        specifier: ^3.9.5
+        specifier: 3.14.1
         version: 3.14.1(graphql@16.14.2)
       '@babel/core':
         specifier: 7.29.7
