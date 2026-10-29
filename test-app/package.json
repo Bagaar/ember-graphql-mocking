@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@apollo/client": "3.14.1",
-    "@babel/core": "7.29.7",
+    "@babel/core": "8.0.9",
     "@bagaar/ember-graphql-mocking": "workspace:*",
     "@ember/optional-features": "3.0.0",
     "@ember/string": "3.1.1",
