@@ -24,7 +24,7 @@ Inside `test-app/`:
 - `pnpm test` / `ember test` — run tests once
 - `ember test --server` — watch mode
 - `ember test --filter "it merges resolvers"` — run a single test (matches module/test name)
-- `./node_modules/.bin/ember try:one <scenario> --skip-cleanup` — run an ember-try scenario (see `test-app/config/ember-try.js`; CI runs LTS 4.8/4.12/5.4, release, beta, canary, embroider-safe)
+- `./node_modules/.bin/ember try:one <scenario> --skip-cleanup` — run an ember-try scenario (see `test-app/config/ember-try.js`; CI runs LTS 5.12/6.8/6.12, release, beta, canary, embroider-safe)
 
 The test app consumes the addon's built `dist/`, so rebuild the addon (or keep `pnpm start` running) after changing addon source before running tests.
 
