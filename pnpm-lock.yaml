@@ -34,8 +34,8 @@ importers:
         specifier: ^1.8.7
         version: 1.11.0
       decorator-transforms:
-        specifier: ^1.0.1
-        version: 1.2.1(@babel/core@7.29.7(supports-color@8.1.1))
+        specifier: ^1.0.1 || ^2.0.0
+        version: 2.4.0(@babel/core@7.29.7(supports-color@8.1.1))
     devDependencies:
       '@babel/core':
         specifier: 7.29.7
@@ -3371,9 +3371,6 @@ packages:
   decompress-response@3.3.0:
     resolution: {integrity: sha512-BzRPQuY1ip+qDonAOz42gRm/pg9F768C+npV/4JOsxRC2sq+Rlk+Q4ZCAsOhnIaMrgarILY+RMUIvMmmX1qAEA==}
     engines: {node: '>=4'}
-
-  decorator-transforms@1.2.1:
-    resolution: {integrity: sha512-UUtmyfdlHvYoX3VSG1w5rbvBQ2r5TX1JsE4hmKU9snleFymadA3VACjl6SRfi9YgBCSjBbfQvR1bs9PRW9yBKw==}
 
   decorator-transforms@2.4.0:
     resolution: {integrity: sha512-IB+0RqnJpuS7ndH4dVY5dfWTZsrCzN3avWFdjSiET0uT2U24jKywjpVEK97TflnZkZgiSRfmeqc1WfS+1CI23w==}
@@ -11241,13 +11238,6 @@ snapshots:
   decompress-response@3.3.0:
     dependencies:
       mimic-response: 1.0.1
-
-  decorator-transforms@1.2.1(@babel/core@7.29.7(supports-color@8.1.1)):
-    dependencies:
-      '@babel/plugin-syntax-decorators': 7.29.7(@babel/core@7.29.7(supports-color@8.1.1))
-      babel-import-util: 2.1.1
-    transitivePeerDependencies:
-      - '@babel/core'
 
   decorator-transforms@2.4.0(@babel/core@7.29.7(supports-color@8.1.1)):
     dependencies:
