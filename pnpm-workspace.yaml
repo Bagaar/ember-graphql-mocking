@@ -7,4 +7,4 @@ allowBuilds:
 overrides:
   '@types/eslint': 7.29.0
   # keep debug's optional supports-color peer on a single version so embroider sees one ember-source instance
-  'supports-color@>=8': 8.1.1
+  'supports-color@>=8': 11.0.0
