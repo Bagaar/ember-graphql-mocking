@@ -83,7 +83,8 @@
       "matchPackageNames": [
         "stylelint",
         "stylelint-*"
-      ]
+      ],
+      "separateMultipleMajor": false
     },
     {
       "matchFileNames": [
