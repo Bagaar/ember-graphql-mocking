@@ -295,8 +295,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0(@types/node@26.6.5)(supports-color@11.0.0)
       '@ember/string':
-        specifier: 3.1.1
-        version: 3.1.1(supports-color@11.0.0)
+        specifier: 4.0.1
+        version: 4.0.1
       '@ember/test-helpers':
         specifier: 5.7.0
         version: 5.7.0(@babel/core@7.29.7(supports-color@11.0.0))
@@ -1166,9 +1166,8 @@ packages:
     resolution: {integrity: sha512-HMQqZoBb16I4NyHfQglIYjopSG6folcEJah2WPa0FuolWRA/8cS5ozQmFK5BQx7cijTQJxj6viLpQK9KrXuYdw==}
     engines: {node: '>= 20.19'}
 
-  '@ember/string@3.1.1':
-    resolution: {integrity: sha512-UbXJ+k3QOrYN4SRPHgXCqYIJ+yWWUg1+vr0H4DhdQPTy8LJfyqwZ2tc5uqpSSnEXE+/1KopHBE5J8GDagAg5cg==}
-    engines: {node: 12.* || 14.* || >= 16}
+  '@ember/string@4.0.1':
+    resolution: {integrity: sha512-VWeng8BSWrIsdPfffOQt/bKwNKJL7+37gPFh/6iZZ9bke+S83kKqkS30poo4bTGfRcMnvAE0ie7txom+iDu81Q==}
 
   '@ember/test-helpers@5.7.0':
     resolution: {integrity: sha512-h77kAJpFQ9fffuLc9+XhoYsk7URDLd7jTLnq7Yk9gGvQ41JupxrGMHoRjyboytSbwngSy+0yXyMhNYfH8ng4xg==}
@@ -8661,11 +8660,7 @@ snapshots:
       - '@types/node'
       - supports-color
 
-  '@ember/string@3.1.1(supports-color@11.0.0)':
-    dependencies:
-      ember-cli-babel: 7.26.11(supports-color@11.0.0)
-    transitivePeerDependencies:
-      - supports-color
+  '@ember/string@4.0.1': {}
 
   '@ember/test-helpers@5.7.0(@babel/core@7.29.7(supports-color@11.0.0))':
     dependencies:
