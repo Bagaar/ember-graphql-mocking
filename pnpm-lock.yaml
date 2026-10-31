@@ -238,8 +238,8 @@ importers:
         specifier: 10.0.6
         version: 10.0.6
       ember-source:
-        specifier: 5.6.0
-        version: 5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
+        specifier: 5.12.0
+        version: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
       ember-template-lint:
         specifier: 7.9.4
         version: 7.9.4
@@ -311,7 +311,7 @@ importers:
         version: 1.1.2
       '@glint/environment-ember-loose':
         specifier: 1.5.2
-        version: 1.5.2(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(ember-cli-htmlbars@7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0))(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@11.0.0)))
+        version: 1.5.2(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(ember-cli-htmlbars@7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0))(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@11.0.0)))
       '@glint/template':
         specifier: 1.11.0
         version: 1.11.0
@@ -353,7 +353,7 @@ importers:
         version: 3.3.3(ember-cli@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@types/node@26.6.5)(debug@4.4.3(supports-color@11.0.0))(handlebars@4.7.10)(supports-color@11.0.0)(underscore@1.13.8))
       ember-cli-htmlbars:
         specifier: 7.0.1
-        version: 7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0)
+        version: 7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0)
       ember-cli-inject-live-reload:
         specifier: 2.1.0
         version: 2.1.0
@@ -368,7 +368,7 @@ importers:
         version: 8.1.2(supports-color@11.0.0)
       ember-load-initializers:
         specifier: 3.0.1
-        version: 3.0.1(ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))
+        version: 3.0.1(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))
       ember-modifier:
         specifier: 4.3.0
         version: 4.3.0(@babel/core@7.29.7(supports-color@11.0.0))
@@ -377,10 +377,10 @@ importers:
         version: 9.2.0(@ember/test-helpers@5.7.0(@babel/core@7.29.7(supports-color@11.0.0)))(qunit@2.26.0)
       ember-resolver:
         specifier: 11.0.1
-        version: 11.0.1(ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0)
+        version: 11.0.1(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0)
       ember-source:
-        specifier: 5.6.0
-        version: 5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
+        specifier: 5.12.0
+        version: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
       ember-source-channel-url:
         specifier: 3.0.0
         version: 3.0.0
@@ -1256,70 +1256,70 @@ packages:
     resolution: {integrity: sha512-GmzA9ckNokPypTg10pgpeHNQe7ph+iIKKmhKu3Ob9ANkswreCx7R3cKmY781K8QK3AqVL3xVh9A42JvIAbkkSA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@glimmer/compiler@0.85.13':
-    resolution: {integrity: sha512-To8a+yScHAHE9/PpwuHyz2yYTBM2+m1Z6l4B9A6LgjkKeu0K7plv2c03V9JpsA3mMJBROJ1mfxOUuQsvTidEkg==}
+  '@glimmer/compiler@0.92.4':
+    resolution: {integrity: sha512-xoR8F6fsgFqWbPbCfSgJuJ95vaLnXw0SgDCwyl/KMeeaSxpHwJbr8+BfiUl+7ko2A+HzrY5dPXXnGr4ZM+CUXw==}
     engines: {node: '>= 16.0.0'}
 
   '@glimmer/component@1.1.2':
     resolution: {integrity: sha512-XyAsEEa4kWOPy+gIdMjJ8XlzA3qrGH55ZDv6nA16ibalCR17k74BI0CztxuRds+Rm6CtbUVgheCVlcCULuqD7A==}
     engines: {node: 6.* || 8.* || >= 10.*}
 
-  '@glimmer/debug@0.85.13':
-    resolution: {integrity: sha512-BguKA6RXbCskyRHfJn+Tm/z0aBwefgYQ4RFz/0lVqYB3lJz8Oo02SDrtHQTwBMC9x/nF9GVA//60R4P47aryWg==}
+  '@glimmer/debug@0.92.4':
+    resolution: {integrity: sha512-waTBOdtp92MC3h/51mYbc4GRumO+Tsa5jbXLoewqALjE1S8bMu9qgkG7Cx635x3/XpjsD9xceMqagBvYhuI6tA==}
 
-  '@glimmer/destroyable@0.85.13':
-    resolution: {integrity: sha512-fE3bhjDAzYsYQ+rm1qlu+6kP8f0CClHYynp1CWhskDc+qM0Jt7Up08htZK8/Ttaw7RXgi43Fe7FrQtOMUlrVlg==}
+  '@glimmer/destroyable@0.92.3':
+    resolution: {integrity: sha512-vQ+mzT9Vkf+JueY7L5XbZqK0WyEVTKv0HOLrw/zDw9F5Szn3F/8Ea/qbAClo3QK3oZeg+ulFTa/61rdjSFYHGA==}
 
   '@glimmer/di@0.1.11':
     resolution: {integrity: sha512-moRwafNDwHTnTHzyyZC9D+mUSvYrs1Ak0tRPjjmCghdoHHIvMshVbEnwKb/1WmW5CUlKc2eL9rlAV32n3GiItg==}
 
-  '@glimmer/encoder@0.85.13':
-    resolution: {integrity: sha512-GukVAeHxDAucbiExjl8lV8BYQXTkV2Co8IXnX5vKaomcZ+fwudGmvzbo2myq+WZ1llqnkZ45DVcqa9BVh9eNWg==}
+  '@glimmer/encoder@0.92.3':
+    resolution: {integrity: sha512-DJ8DB33LxODjzCWRrxozHUaRqVyZj4p8jDLG42aCNmWo3smxrsjshcaVUwDmib24DW+dzR7kMc39ObMqT5zK0w==}
 
   '@glimmer/env@0.1.7':
     resolution: {integrity: sha512-JKF/a9I9jw6fGoz8kA7LEQslrwJ5jms5CXhu/aqkBWk+PmZ6pTl8mlb/eJ/5ujBGTiQzBhy5AIWF712iA+4/mw==}
 
-  '@glimmer/global-context@0.85.13':
-    resolution: {integrity: sha512-JY/TQ+9dyukQVuTwKlF3jVXaWUwxx676KtclYf6SphtJQu2/mysxqj9XIAowOahhi9m7E7hzHkxAl9bm2FXXjQ==}
+  '@glimmer/global-context@0.92.3':
+    resolution: {integrity: sha512-tvlK5pt6oSe3furJ1KsO9vG/KmF9S98HLrcR48XbfwXlkuxvUeS94cdQId4GCN5naeX4OC4xm6eEjZWdc2s+jw==}
 
   '@glimmer/interfaces@0.84.3':
     resolution: {integrity: sha512-dk32ykoNojt0mvEaIW6Vli5MGTbQo58uy3Epj7ahCgTHmWOKuw/0G83f2UmFprRwFx689YTXG38I/vbpltEjzg==}
 
-  '@glimmer/interfaces@0.85.13':
-    resolution: {integrity: sha512-qOEdvFgCQX1g+Gfi/nA2zbKYPmEkEbhFgzZ5esgmlQNOSQx4j8nyGiBvnG/vepHrh4wUzTvIynrCQpfr3SiKXg==}
-
   '@glimmer/interfaces@0.88.1':
     resolution: {integrity: sha512-BOcN8xFNX/eppGxwS9Rm1+PlQaFX+tK91cuQLHj2sRwB+qVbL/WeutIa3AUQYr0VVEzMm2S6bYCLvG6p0a8v9A==}
 
-  '@glimmer/manager@0.85.13':
-    resolution: {integrity: sha512-HwJoD9qAVPQ6hHNMUFTvQtJi5NIO1JzOT0kauyln754G6ggT07IFmi+b1R4WeJJJndZpuR3Ad4PS4usRnI89Zw==}
+  '@glimmer/interfaces@0.92.3':
+    resolution: {integrity: sha512-QwQeA01N+0h+TAi/J7iUnZtRuJy+093hNyagxDQBA6b1wCBw+q+al9+O6gmbWlkWE7EifzmNE1nnrgcecJBlJQ==}
 
-  '@glimmer/node@0.85.13':
-    resolution: {integrity: sha512-Lb/0zPoucm8hQ/qd6A8RYgdoLSC5tulZJ7LahAq1/bpG42vJyQMGYBjxVL2ffQv+Yxao/nEQxUP5ssoLXS+gvw==}
+  '@glimmer/manager@0.92.4':
+    resolution: {integrity: sha512-YMoarZT/+Ft2YSd+Wuu5McVsdP9y6jeAdVQGYFpno3NlL3TXYbl7ELtK7OGxFLjzQE01BdiUZZRvcY+a/s9+CQ==}
 
-  '@glimmer/opcode-compiler@0.85.13':
-    resolution: {integrity: sha512-EySW/IsMoO+lWW2TC31zsHqanST/5lTGoZOrB9zy7FmiUaPGD0RxeOEBU8rTRHzYxNzoJAsX7l3Hv6Y0y2ABZg==}
+  '@glimmer/node@0.92.4':
+    resolution: {integrity: sha512-a5GME7HQJZFJPQDdSetQI6jjKXXQi0Vdr3WuUrYwhienVTV5LG0uClbFE2yYWC7TX97YDHpRrNk1CC258rujkQ==}
 
-  '@glimmer/owner@0.85.13':
-    resolution: {integrity: sha512-4FhMR9qHuKu7sZIIsulqBvzP9UWYFtjxzF+eQ5cxmr+0uxjJN8/rZbRG8vPbJs3OoV2k+vHj4BYhLyflSjRaZw==}
+  '@glimmer/opcode-compiler@0.92.4':
+    resolution: {integrity: sha512-WnZSBwxNqW/PPD/zfxEg6BVR5tHwTm8fp76piix8BNCQ6CuzVn6HUJ5SlvBsOwyoRCmzt/pkKmBJn+I675KG4w==}
 
-  '@glimmer/program@0.85.13':
-    resolution: {integrity: sha512-E+89jmD+52fB2/HqeOW2vim1x8wNTkpfPpzsGeVFlyZHxBaMR95zw1+rgl2aE1pyRoZR3csL4qSBaJb26Sp6Pw==}
+  '@glimmer/owner@0.92.3':
+    resolution: {integrity: sha512-ZxmXIUCy6DOobhGDhA6kMpaXZS7HAucEgIl/qcjV9crlzGOO8H4j+n2x6nA/8zpuqvO0gYaBzqdNdu+7EgOEmw==}
 
-  '@glimmer/reference@0.85.13':
-    resolution: {integrity: sha512-rkMlY6RUkwZwfO7fQodKQw5WOLCKNZPkVAloaVJSqpyKjHRNjMaD3TZhfNmlGIVdNgVRRsOWSWdTL5CUUzDlwQ==}
+  '@glimmer/program@0.92.4':
+    resolution: {integrity: sha512-fkquujQ11lsGCWl/+XpZW2E7bjHj/g6/Ht292A7pSoANBD8Bz/gPYiPM+XuMwes9MApEsTEMjV4EXlyk2/Cirg==}
 
-  '@glimmer/runtime@0.85.13':
-    resolution: {integrity: sha512-jum5u2mX0WOAAF3L0pVZ/AOAMjJRKfGIqcStUYldmnf/xCFucKsh2WzSBS5KxlHDt4OGs00GflkpoTZkqPnCmg==}
+  '@glimmer/reference@0.92.3':
+    resolution: {integrity: sha512-Ud4LE689mEXL6BJnJx0ZPt2dt/A540C+TAnBFXHpcAjROz5gT337RN+tgajwudEUqpufExhcPSMGzs1pvWYCJg==}
+
+  '@glimmer/runtime@0.92.4':
+    resolution: {integrity: sha512-ISqM/8hVh+fY/gnLAAPKfts4CvnJBOyCYAXgGccIlzzQrSVLaz0NoRiWTLGj5B/3xyPbqLwYPDvlTsOjYtvPoA==}
 
   '@glimmer/syntax@0.84.3':
     resolution: {integrity: sha512-ioVbTic6ZisLxqTgRBL2PCjYZTFIwobifCustrozRU2xGDiYvVIL0vt25h2c1ioDsX59UgVlDkIK4YTAQQSd2A==}
 
-  '@glimmer/syntax@0.85.13':
-    resolution: {integrity: sha512-zMGkJh6JcHdCTx1emmBbhBrGO04gqD6CS5khmDwSJCIpVHnGH0Ejxp9rpnSMc5IW71/hFoQY6RlMgVYF2hrHhA==}
-
   '@glimmer/syntax@0.88.1':
     resolution: {integrity: sha512-tucexG0j5SSbk3d4ayCOnvjg5FldvWyrZbzxukZOBhDgAYhGWUnGFAqdoXjpr3w6FkD4xIVliVD9GFrH4lI8DA==}
+
+  '@glimmer/syntax@0.92.3':
+    resolution: {integrity: sha512-7wPKQmULyXCYf0KvbPmfrs/skPISH2QGR9atCnmDWnHyLv5SSZVLm1P0Ctrpta6+Ci3uGQb7hGk0IjsLEavcYQ==}
 
   '@glimmer/syntax@0.97.0':
     resolution: {integrity: sha512-uDUqlAxU40eJHJjMUR6ffdpDp6W53gNvS9YZNrBbf77sUL5xUFsBAaReB3FuyVPbwRg09p5rviioUJ8nyg7BBA==}
@@ -1333,30 +1333,30 @@ packages:
   '@glimmer/util@0.84.3':
     resolution: {integrity: sha512-qFkh6s16ZSRuu2rfz3T4Wp0fylFj3HBsONGXQcrAdZjdUaIS6v3pNj6mecJ71qRgcym9Hbaq/7/fefIwECUiKw==}
 
-  '@glimmer/util@0.85.13':
-    resolution: {integrity: sha512-ogj65iukNKEPPqQ2bOD6CLsqxsFwmiGvTQbAsg1eh1MoPjxhNZMpLsT5CdQ10XE7yUALHGJ71SwxBSpAOGDmxg==}
-
   '@glimmer/util@0.88.1':
     resolution: {integrity: sha512-PV/24+vBmsReR78UQXJlEHDblU6QBAeIJa8MwKhQoxSD6WgvQHP4KmX23rvlCz11GxApTwyPm/2qyp/SwVvX2A==}
+
+  '@glimmer/util@0.92.3':
+    resolution: {integrity: sha512-K1oH93gGU36slycxJ9CcFpUTsdOc4XQ6RuZFu5oRsxFYtEF5PSu7ik11h58fyeoaWOr1ebfkyAMawbeI2AJ5GA==}
 
   '@glimmer/validator@0.44.0':
     resolution: {integrity: sha512-i01plR0EgFVz69GDrEuFgq1NheIjZcyTy3c7q+w7d096ddPVeVcRzU3LKaqCfovvLJ+6lJx40j45ecycASUUyw==}
 
-  '@glimmer/validator@0.85.13':
-    resolution: {integrity: sha512-vWSHpYq1gbnssxwyW0t7JrSbfZj8jZUAUdqp9bymHZOgru7QZn0mYCuJbfYDvF9pzsTQ+i0zZBMxZRHeAWbasQ==}
+  '@glimmer/validator@0.92.3':
+    resolution: {integrity: sha512-HKrMYeW0YhiksSeKYqX2chUR/rz82j12DcY7p2dORQlTV3qlAfiE5zRTJH1KRA1X3ZMf7DI2/GOzkXwYp0o+3Q==}
 
-  '@glimmer/vm-babel-plugins@0.85.13':
-    resolution: {integrity: sha512-B5R+t7o0Dlfz7GYu6liQ/GERAq/Fb775KZJeEaIwX2odJDKyIfOU+m/bLHpoVevY4V/x+qB8tVCA4Nv5LXu3Kg==}
+  '@glimmer/vm-babel-plugins@0.92.3':
+    resolution: {integrity: sha512-VpkKsHc3oiq9ruiwT7sN4RuOIc5n10PCeWX7tYSNZ85S1bETcAFn0XbyNjI+G3uFshQGEK0T8Fn3+/8VTNIQIg==}
     engines: {node: '>=16'}
 
-  '@glimmer/vm@0.85.13':
-    resolution: {integrity: sha512-x/FwTAFnoIzu/TzJYuqWI1rWoIJUthKZ6n37q5Nr8TVoFqOVXk7q9k53etcAhxLEwBjX/cox6i1FxCuv5vpc8Q==}
-
-  '@glimmer/wire-format@0.85.13':
-    resolution: {integrity: sha512-q6bHPfjSYE9jH27L75lUzyhSpBA+iONzsJVXewdwO4GdYYCC4s+pfUaJg7ZYNFDcHDuVKUcLhBb/NICDzMA5Uw==}
+  '@glimmer/vm@0.92.3':
+    resolution: {integrity: sha512-DNMQz7nn2zRwKO1irVZ4alg1lH+VInwR3vkWVgobUs0yh7OoHVGXKMd5uxzIksqJEUw1XOX9Qgu/GYZB1PiH3w==}
 
   '@glimmer/wire-format@0.88.1':
     resolution: {integrity: sha512-DPM2UiYRNzcWdOUrSa8/IFbWKovH+c2JPnbvtk04DpfQapU7+hteBj34coEN/pW3FJiP3WMvx/EuPfWROkeDsg==}
+
+  '@glimmer/wire-format@0.92.3':
+    resolution: {integrity: sha512-gFz81Q9+V7Xs0X8mSq6y8qacHm0dPaGJo2/Bfcsdow1hLOKNgTCLr4XeDBhRML8f6I6Gk9ugH4QDxyIOXOpC4w==}
 
   '@glint/core@1.5.2':
     resolution: {integrity: sha512-kbEt8jBEkH65yDB20tBq/rnZl+iigmAenKQcgu1cqex6/eT6LrQ5E9QxyKtqe9S18qZv0c/LNa0qE7jwbAEKMA==}
@@ -2663,10 +2663,6 @@ packages:
     resolution: {integrity: sha512-t1o2O+91u4oLtku0sysC2nAuwBoyH9lDWmRoKHdAktt5fFaD8b2slKsWq2dyXrZ+/FW/jFa5rWdN3zK9VB0qvQ==}
     engines: {node: '>= 18.*'}
 
-  babel-plugin-filter-imports@4.0.0:
-    resolution: {integrity: sha512-jDLlxI8QnfKd7PtieH6pl4tZJzymzfCDCPGdTq/grgbiYAikwDPp/oL0IlFJn0HQjLpcLkyYhPKkUVneRESw5w==}
-    engines: {node: '>=8'}
-
   babel-plugin-htmlbars-inline-precompile@5.3.1:
     resolution: {integrity: sha512-QWjjFgSKtSRIcsBhJmEwS2laIdrA6na8HAlc/pEAhjHgQsah/gMiBFRZvbQTy//hWxR4BMwV7/Mya7q5H8uHeA==}
     engines: {node: 10.* || >= 12.*}
@@ -3809,9 +3805,9 @@ packages:
     engines: {node: 10.* || 12.* || >= 14}
     hasBin: true
 
-  ember-source@5.6.0:
-    resolution: {integrity: sha512-dtxi3cVPT4/+NyhA+a+4UL/i+ut4Fuu3uJAgkVqrN1XlK4TXpyVp9I6VbH7DjD5+LJdF1+UqIn8GJ50dIdoH2Q==}
-    engines: {node: '>= 16.*'}
+  ember-source@5.12.0:
+    resolution: {integrity: sha512-2MWlJmQEeeiIk9p5CDMuvD470YPi7/4wXgU41ftbWc9svwF+0usoe4PLoLC0T/jV6YX+3SY5tumQfxLSLoFhmQ==}
+    engines: {node: '>= 18.*'}
     peerDependencies:
       '@glimmer/component': ^1.1.2
 
@@ -8840,13 +8836,13 @@ snapshots:
 
   '@gar/promise-retry@1.0.3': {}
 
-  '@glimmer/compiler@0.85.13':
+  '@glimmer/compiler@0.92.4':
     dependencies:
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/syntax': 0.85.13
-      '@glimmer/util': 0.85.13
-      '@glimmer/vm': 0.85.13
-      '@glimmer/wire-format': 0.85.13
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/syntax': 0.92.3
+      '@glimmer/util': 0.92.3
+      '@glimmer/vm': 0.92.3
+      '@glimmer/wire-format': 0.92.3
 
   '@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0)':
     dependencies:
@@ -8868,35 +8864,31 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  '@glimmer/debug@0.85.13':
+  '@glimmer/debug@0.92.4':
     dependencies:
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/util': 0.85.13
-      '@glimmer/vm': 0.85.13
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/util': 0.92.3
+      '@glimmer/vm': 0.92.3
 
-  '@glimmer/destroyable@0.85.13':
+  '@glimmer/destroyable@0.92.3':
     dependencies:
       '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.85.13
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/util': 0.85.13
+      '@glimmer/global-context': 0.92.3
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/util': 0.92.3
 
   '@glimmer/di@0.1.11': {}
 
-  '@glimmer/encoder@0.85.13':
+  '@glimmer/encoder@0.92.3':
     dependencies:
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/vm': 0.85.13
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/vm': 0.92.3
 
   '@glimmer/env@0.1.7': {}
 
-  '@glimmer/global-context@0.85.13': {}
+  '@glimmer/global-context@0.92.3': {}
 
   '@glimmer/interfaces@0.84.3':
-    dependencies:
-      '@simple-dom/interface': 1.4.0
-
-  '@glimmer/interfaces@0.85.13':
     dependencies:
       '@simple-dom/interface': 1.4.0
 
@@ -8904,75 +8896,79 @@ snapshots:
     dependencies:
       '@simple-dom/interface': 1.4.0
 
-  '@glimmer/manager@0.85.13':
+  '@glimmer/interfaces@0.92.3':
     dependencies:
-      '@glimmer/debug': 0.85.13
-      '@glimmer/destroyable': 0.85.13
-      '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.85.13
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/reference': 0.85.13
-      '@glimmer/util': 0.85.13
-      '@glimmer/validator': 0.85.13
-      '@glimmer/vm': 0.85.13
+      '@simple-dom/interface': 1.4.0
 
-  '@glimmer/node@0.85.13':
+  '@glimmer/manager@0.92.4':
     dependencies:
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/runtime': 0.85.13
-      '@glimmer/util': 0.85.13
+      '@glimmer/debug': 0.92.4
+      '@glimmer/destroyable': 0.92.3
+      '@glimmer/env': 0.1.7
+      '@glimmer/global-context': 0.92.3
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/reference': 0.92.3
+      '@glimmer/util': 0.92.3
+      '@glimmer/validator': 0.92.3
+      '@glimmer/vm': 0.92.3
+
+  '@glimmer/node@0.92.4':
+    dependencies:
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/runtime': 0.92.4
+      '@glimmer/util': 0.92.3
       '@simple-dom/document': 1.4.0
 
-  '@glimmer/opcode-compiler@0.85.13':
+  '@glimmer/opcode-compiler@0.92.4':
     dependencies:
-      '@glimmer/debug': 0.85.13
-      '@glimmer/encoder': 0.85.13
+      '@glimmer/debug': 0.92.4
+      '@glimmer/encoder': 0.92.3
       '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.85.13
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/manager': 0.85.13
-      '@glimmer/reference': 0.85.13
-      '@glimmer/util': 0.85.13
-      '@glimmer/vm': 0.85.13
-      '@glimmer/wire-format': 0.85.13
+      '@glimmer/global-context': 0.92.3
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/manager': 0.92.4
+      '@glimmer/reference': 0.92.3
+      '@glimmer/util': 0.92.3
+      '@glimmer/vm': 0.92.3
+      '@glimmer/wire-format': 0.92.3
 
-  '@glimmer/owner@0.85.13':
+  '@glimmer/owner@0.92.3':
     dependencies:
-      '@glimmer/util': 0.85.13
+      '@glimmer/util': 0.92.3
 
-  '@glimmer/program@0.85.13':
+  '@glimmer/program@0.92.4':
     dependencies:
-      '@glimmer/encoder': 0.85.13
+      '@glimmer/encoder': 0.92.3
       '@glimmer/env': 0.1.7
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/manager': 0.85.13
-      '@glimmer/opcode-compiler': 0.85.13
-      '@glimmer/util': 0.85.13
-      '@glimmer/vm': 0.85.13
-      '@glimmer/wire-format': 0.85.13
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/manager': 0.92.4
+      '@glimmer/opcode-compiler': 0.92.4
+      '@glimmer/util': 0.92.3
+      '@glimmer/vm': 0.92.3
+      '@glimmer/wire-format': 0.92.3
 
-  '@glimmer/reference@0.85.13':
+  '@glimmer/reference@0.92.3':
     dependencies:
       '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.85.13
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/util': 0.85.13
-      '@glimmer/validator': 0.85.13
+      '@glimmer/global-context': 0.92.3
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/util': 0.92.3
+      '@glimmer/validator': 0.92.3
 
-  '@glimmer/runtime@0.85.13':
+  '@glimmer/runtime@0.92.4':
     dependencies:
-      '@glimmer/destroyable': 0.85.13
+      '@glimmer/destroyable': 0.92.3
       '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.85.13
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/manager': 0.85.13
-      '@glimmer/owner': 0.85.13
-      '@glimmer/program': 0.85.13
-      '@glimmer/reference': 0.85.13
-      '@glimmer/util': 0.85.13
-      '@glimmer/validator': 0.85.13
-      '@glimmer/vm': 0.85.13
-      '@glimmer/wire-format': 0.85.13
+      '@glimmer/global-context': 0.92.3
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/manager': 0.92.4
+      '@glimmer/owner': 0.92.3
+      '@glimmer/program': 0.92.4
+      '@glimmer/reference': 0.92.3
+      '@glimmer/util': 0.92.3
+      '@glimmer/validator': 0.92.3
+      '@glimmer/vm': 0.92.3
+      '@glimmer/wire-format': 0.92.3
 
   '@glimmer/syntax@0.84.3':
     dependencies:
@@ -8981,19 +8977,19 @@ snapshots:
       '@handlebars/parser': 2.0.0
       simple-html-tokenizer: 0.5.11
 
-  '@glimmer/syntax@0.85.13':
-    dependencies:
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/util': 0.85.13
-      '@glimmer/wire-format': 0.85.13
-      '@handlebars/parser': 2.0.0
-      simple-html-tokenizer: 0.5.11
-
   '@glimmer/syntax@0.88.1':
     dependencies:
       '@glimmer/interfaces': 0.88.1
       '@glimmer/util': 0.88.1
       '@glimmer/wire-format': 0.88.1
+      '@handlebars/parser': 2.0.0
+      simple-html-tokenizer: 0.5.11
+
+  '@glimmer/syntax@0.92.3':
+    dependencies:
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/util': 0.92.3
+      '@glimmer/wire-format': 0.92.3
       '@handlebars/parser': 2.0.0
       simple-html-tokenizer: 0.5.11
 
@@ -9014,45 +9010,45 @@ snapshots:
       '@glimmer/interfaces': 0.84.3
       '@simple-dom/interface': 1.4.0
 
-  '@glimmer/util@0.85.13':
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/interfaces': 0.85.13
-
   '@glimmer/util@0.88.1':
     dependencies:
       '@glimmer/env': 0.1.7
       '@glimmer/interfaces': 0.88.1
 
-  '@glimmer/validator@0.44.0': {}
-
-  '@glimmer/validator@0.85.13':
+  '@glimmer/util@0.92.3':
     dependencies:
       '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.85.13
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/util': 0.85.13
+      '@glimmer/interfaces': 0.92.3
 
-  '@glimmer/vm-babel-plugins@0.85.13(@babel/core@7.29.7(supports-color@11.0.0))':
+  '@glimmer/validator@0.44.0': {}
+
+  '@glimmer/validator@0.92.3':
+    dependencies:
+      '@glimmer/env': 0.1.7
+      '@glimmer/global-context': 0.92.3
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/util': 0.92.3
+
+  '@glimmer/vm-babel-plugins@0.92.3(@babel/core@7.29.7(supports-color@11.0.0))':
     dependencies:
       babel-plugin-debug-macros: 0.3.4(@babel/core@7.29.7(supports-color@11.0.0))
     transitivePeerDependencies:
       - '@babel/core'
 
-  '@glimmer/vm@0.85.13':
+  '@glimmer/vm@0.92.3':
     dependencies:
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/util': 0.85.13
-
-  '@glimmer/wire-format@0.85.13':
-    dependencies:
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/util': 0.85.13
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/util': 0.92.3
 
   '@glimmer/wire-format@0.88.1':
     dependencies:
       '@glimmer/interfaces': 0.88.1
       '@glimmer/util': 0.88.1
+
+  '@glimmer/wire-format@0.92.3':
+    dependencies:
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/util': 0.92.3
 
   '@glint/core@1.5.2(supports-color@11.0.0)(typescript@5.9.3)':
     dependencies:
@@ -9077,12 +9073,12 @@ snapshots:
       ember-cli-htmlbars: 6.3.0(supports-color@11.0.0)
       ember-modifier: 4.3.0(@babel/core@7.29.7(supports-color@11.0.0))
 
-  '@glint/environment-ember-loose@1.5.2(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(ember-cli-htmlbars@7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0))(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@11.0.0)))':
+  '@glint/environment-ember-loose@1.5.2(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(ember-cli-htmlbars@7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0))(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@11.0.0)))':
     dependencies:
       '@glimmer/component': 1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0)
       '@glint/template': 1.11.0
     optionalDependencies:
-      ember-cli-htmlbars: 7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0)
+      ember-cli-htmlbars: 7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0)
       ember-modifier: 4.3.0(@babel/core@7.29.7(supports-color@11.0.0))
 
   '@glint/environment-ember-template-imports@1.5.2(@glint/environment-ember-loose@1.5.2(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(ember-cli-htmlbars@6.3.0(supports-color@11.0.0))(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@11.0.0))))(@glint/template@1.11.0)':
@@ -10274,11 +10270,6 @@ snapshots:
       '@glimmer/syntax': 0.97.0
       babel-import-util: 3.0.1
       import-meta-resolve: 4.2.0
-
-  babel-plugin-filter-imports@4.0.0:
-    dependencies:
-      '@babel/types': 7.29.11
-      lodash: 4.18.1
 
   babel-plugin-htmlbars-inline-precompile@5.3.1:
     dependencies:
@@ -11622,7 +11613,7 @@ snapshots:
       - supports-color
     optional: true
 
-  ember-cli-htmlbars@7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0):
+  ember-cli-htmlbars@7.0.1(@babel/core@7.29.7(supports-color@11.0.0))(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0):
     dependencies:
       '@babel/core': 7.29.7(supports-color@11.0.0)
       '@ember/edition-utils': 1.2.0
@@ -11630,7 +11621,7 @@ snapshots:
       broccoli-debug: 0.6.5(supports-color@11.0.0)
       broccoli-persistent-filter: 3.1.3(supports-color@11.0.0)
       broccoli-plugin: 4.0.7(supports-color@11.0.0)
-      ember-source: 5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
+      ember-source: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
       fs-tree-diff: 2.0.1(supports-color@11.0.0)
       heimdalljs-logger: 0.1.10(supports-color@11.0.0)
       js-string-escape: 1.0.1
@@ -11929,9 +11920,9 @@ snapshots:
       - encoding
       - supports-color
 
-  ember-load-initializers@3.0.1(ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))):
+  ember-load-initializers@3.0.1(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))):
     dependencies:
-      ember-source: 5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
+      ember-source: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
 
   ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@11.0.0)):
     dependencies:
@@ -11947,11 +11938,11 @@ snapshots:
       qunit: 2.26.0
       qunit-theme-ember: 1.0.0
 
-  ember-resolver@11.0.1(ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0):
+  ember-resolver@11.0.1(ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)))(supports-color@11.0.0):
     dependencies:
       ember-cli-babel: 7.26.11(supports-color@11.0.0)
     optionalDependencies:
-      ember-source: 5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
+      ember-source: 5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
     transitivePeerDependencies:
       - supports-color
 
@@ -11971,41 +11962,36 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  ember-source@5.6.0(@babel/core@7.29.7(supports-color@11.0.0))(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)):
+  ember-source@5.12.0(@glimmer/component@1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0))(@glint/template@1.11.0)(rsvp@4.8.5)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3)):
     dependencies:
-      '@babel/helper-module-imports': 7.29.7(supports-color@11.0.0)
+      '@babel/core': 7.29.7(supports-color@11.0.0)
       '@ember/edition-utils': 1.2.0
-      '@glimmer/compiler': 0.85.13
+      '@glimmer/compiler': 0.92.4
       '@glimmer/component': 1.1.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0)
-      '@glimmer/destroyable': 0.85.13
+      '@glimmer/destroyable': 0.92.3
       '@glimmer/env': 0.1.7
-      '@glimmer/global-context': 0.85.13
-      '@glimmer/interfaces': 0.85.13
-      '@glimmer/manager': 0.85.13
-      '@glimmer/node': 0.85.13
-      '@glimmer/opcode-compiler': 0.85.13
-      '@glimmer/owner': 0.85.13
-      '@glimmer/program': 0.85.13
-      '@glimmer/reference': 0.85.13
-      '@glimmer/runtime': 0.85.13
-      '@glimmer/syntax': 0.85.13
-      '@glimmer/util': 0.85.13
-      '@glimmer/validator': 0.85.13
-      '@glimmer/vm': 0.85.13
-      '@glimmer/vm-babel-plugins': 0.85.13(@babel/core@7.29.7(supports-color@11.0.0))
+      '@glimmer/global-context': 0.92.3
+      '@glimmer/interfaces': 0.92.3
+      '@glimmer/manager': 0.92.4
+      '@glimmer/node': 0.92.4
+      '@glimmer/opcode-compiler': 0.92.4
+      '@glimmer/owner': 0.92.3
+      '@glimmer/program': 0.92.4
+      '@glimmer/reference': 0.92.3
+      '@glimmer/runtime': 0.92.4
+      '@glimmer/syntax': 0.92.3
+      '@glimmer/util': 0.92.3
+      '@glimmer/validator': 0.92.3
+      '@glimmer/vm': 0.92.3
+      '@glimmer/vm-babel-plugins': 0.92.3(@babel/core@7.29.7(supports-color@11.0.0))
       '@simple-dom/interface': 1.4.0
-      babel-plugin-debug-macros: 0.3.4(@babel/core@7.29.7(supports-color@11.0.0))
-      babel-plugin-ember-template-compilation: 2.4.1
-      babel-plugin-filter-imports: 4.0.0
       backburner.js: 2.8.0
-      broccoli-concat: 4.2.7(supports-color@11.0.0)
-      broccoli-debug: 0.6.5(supports-color@11.0.0)
       broccoli-file-creator: 2.1.1
       broccoli-funnel: 3.0.8(supports-color@11.0.0)
       broccoli-merge-trees: 4.2.0(supports-color@11.0.0)
       chalk: 4.1.2
       ember-auto-import: 2.13.1(@glint/template@1.11.0)(supports-color@11.0.0)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.32)(uglify-js@3.19.3))
-      ember-cli-babel: 7.26.11(supports-color@11.0.0)
+      ember-cli-babel: 8.3.2(@babel/core@7.29.7(supports-color@11.0.0))(supports-color@11.0.0)
       ember-cli-get-component-path-option: 1.0.0
       ember-cli-is-package-missing: 1.0.0
       ember-cli-normalize-entity-name: 1.0.0(supports-color@11.0.0)
@@ -12021,7 +12007,6 @@ snapshots:
       silent-error: 1.1.1(supports-color@11.0.0)
       simple-html-tokenizer: 0.5.11
     transitivePeerDependencies:
-      - '@babel/core'
       - '@glint/template'
       - rsvp
       - supports-color
