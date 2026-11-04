@@ -1,5 +1,16 @@
 # Changelog
 
+## Release (2026-11-04)
+
+* @bagaar/ember-graphql-mocking 1.0.0 (major)
+
+#### :boom: Breaking Change
+* `@bagaar/ember-graphql-mocking`
+  * [#219](https://github.com/Bagaar/ember-graphql-mocking/pull/219) drop support for Ember < 5.12 ([@gvdp](https://github.com/gvdp))
+
+#### Committers: 1
+- [@gvdp](https://github.com/gvdp)
+
 ## Release (2026-10-29)
 
 * @bagaar/ember-graphql-mocking 0.11.4 (patch)
