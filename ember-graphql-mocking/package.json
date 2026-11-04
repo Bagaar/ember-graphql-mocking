@@ -96,7 +96,7 @@
     "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "ember-source": "^5.12.0 || ^6.0.0",
+    "ember-source": "^5.12.0 || ^6.0.0 || ^7.0.0",
     "graphql": ">= 16.0.0",
     "msw": ">= 2.0.0"
   },
