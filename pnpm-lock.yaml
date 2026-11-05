@@ -163,7 +163,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@types/eslint': 7.29.0
+  '@types/eslint': 9.6.1
   supports-color@>=8: 11.0.0
 
 importers:
@@ -257,7 +257,7 @@ importers:
         version: 18.5.0(eslint@8.57.1(supports-color@11.0.0))(typescript@5.9.3)
       eslint-plugin-prettier:
         specifier: 5.5.7
-        version: 5.5.7(@types/eslint@7.29.0)(eslint-config-prettier@10.1.8(eslint@8.57.1(supports-color@11.0.0)))(eslint@8.57.1(supports-color@11.0.0))(prettier@3.9.10)
+        version: 5.5.7(eslint-config-prettier@10.1.8(eslint@8.57.1(supports-color@11.0.0)))(eslint@8.57.1(supports-color@11.0.0))(prettier@3.9.10)
       graphql:
         specifier: 16.14.2
         version: 16.14.2
@@ -404,7 +404,7 @@ importers:
         version: 18.5.0(eslint@8.57.1(supports-color@11.0.0))(typescript@5.9.3)
       eslint-plugin-prettier:
         specifier: 5.5.7
-        version: 5.5.7(@types/eslint@7.29.0)(eslint-config-prettier@10.1.8(eslint@8.57.1(supports-color@11.0.0)))(eslint@8.57.1(supports-color@11.0.0))(prettier@3.9.10)
+        version: 5.5.7(eslint-config-prettier@10.1.8(eslint@8.57.1(supports-color@11.0.0)))(eslint@8.57.1(supports-color@11.0.0))(prettier@3.9.10)
       eslint-plugin-qunit:
         specifier: 8.2.6
         version: 8.2.6(eslint@8.57.1(supports-color@11.0.0))
@@ -2046,8 +2046,8 @@ packages:
   '@types/cors@2.8.19':
     resolution: {integrity: sha512-mFNylyeyqN93lfe/9CSxOGREz8cpzAhH+E93xJ4xWQf62V8sQ/24reV2nyzUWM6H6Xji+GGHpkbLe7pVoUEskg==}
 
-  '@types/eslint@7.29.0':
-    resolution: {integrity: sha512-VNcvioYDH8/FxaeTKkM4/TiTwt6pBV9E3OfGmvaw8tPl0rrHCJ4Ll15HRT+pMiFAf/MLQvAzC+6RzUMEL9Ceng==}
+  '@types/eslint@9.6.1':
+    resolution: {integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==}
 
   '@types/esrecurse@4.3.1':
     resolution: {integrity: sha512-xJBAbDifo5hpffDBuHl0Y8ywswbiAp/Wi7Y/GtAgSlZyIABppyurxVueOPE8LUQOxdlgi6Zqce7uoEpqNTeiUw==}
@@ -8487,7 +8487,7 @@ snapshots:
 
   '@lint-todo/utils@13.1.1':
     dependencies:
-      '@types/eslint': 7.29.0
+      '@types/eslint': 9.6.1
       find-up: 5.0.0
       fs-extra: 9.1.0
       proper-lockfile: 4.1.2
@@ -8896,7 +8896,7 @@ snapshots:
     dependencies:
       '@types/node': 26.6.5
 
-  '@types/eslint@7.29.0':
+  '@types/eslint@9.6.1':
     dependencies:
       '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
@@ -11195,14 +11195,14 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  eslint-plugin-prettier@5.5.7(@types/eslint@7.29.0)(eslint-config-prettier@10.1.8(eslint@8.57.1(supports-color@11.0.0)))(eslint@8.57.1(supports-color@11.0.0))(prettier@3.9.10):
+  eslint-plugin-prettier@5.5.7(eslint-config-prettier@10.1.8(eslint@8.57.1(supports-color@11.0.0)))(eslint@8.57.1(supports-color@11.0.0))(prettier@3.9.10):
     dependencies:
       eslint: 8.57.1(supports-color@11.0.0)
       prettier: 3.9.10
       prettier-linter-helpers: 1.0.1
       synckit: 0.12.3
     optionalDependencies:
-      '@types/eslint': 7.29.0
+      '@types/eslint': 9.6.1
       eslint-config-prettier: 10.1.8(eslint@8.57.1(supports-color@11.0.0))
 
   eslint-plugin-qunit@8.2.6(eslint@8.57.1(supports-color@11.0.0)):
