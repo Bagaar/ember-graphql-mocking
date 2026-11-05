@@ -205,8 +205,8 @@ importers:
         specifier: 7.29.10
         version: 7.29.10
       '@embroider/addon-dev':
-        specifier: 4.3.1
-        version: 4.3.1(@glint/template@1.11.0)(rollup@4.65.1)(supports-color@11.0.0)
+        specifier: 6.0.1
+        version: 6.0.1(@glint/template@1.11.0)(rollup@4.65.1)(supports-color@11.0.0)
       '@glint/core':
         specifier: 1.5.2
         version: 1.5.2(supports-color@11.0.0)(typescript@5.9.3)
@@ -1163,10 +1163,15 @@ packages:
   '@ember/test-waiters@4.1.2':
     resolution: {integrity: sha512-zJwFaHLHjJn6mKoXYVM1SEyMT+U1JpaaSKg3JBmxHJwiIoJRI5djJ/CE33Z7N09mk5JfXd2xdhbd9LBWdlvAzg==}
 
-  '@embroider/addon-dev@4.3.1':
-    resolution: {integrity: sha512-CNZ4Y69PPIZAAGGoERjvDcrwOwWTuUmnRYu+XnmqKk0opdlu/PTssO9YWyxp8AnvGd2l7iLCjEn5mpLFvifstA==}
+  '@embroider/addon-dev@6.0.1':
+    resolution: {integrity: sha512-0dOvwrETKHQtzLuYQ9nAPSbWWBvf4DQzy8yR35SAKqFYO+P7xEqK6HcEdHFkjs6+wUyhSXwAoIEbNTDJLv4d6w==}
     engines: {node: 12.* || 14.* || >= 16}
     hasBin: true
+    peerDependencies:
+      rollup: ^4.6.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
 
   '@embroider/addon-shim@1.11.0':
     resolution: {integrity: sha512-vXjhIOtvrns9IBFlgEN1imSeXtuVIlLypaDexu7xzsvB4Ef6yruhH33DNd9OmO0nXIB4SbwdkIwEsLYnhrujqA==}
@@ -3296,10 +3301,6 @@ packages:
     resolution: {integrity: sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==}
     engines: {node: '>= 0.4'}
 
-  del@6.1.1:
-    resolution: {integrity: sha512-ua8BhapfP0JUJKC/zV9yHHDW/rDoDxP4Zhn3AkA6/xT6gY7jYXJiaeyBZznYVujhZZET+UgcbZiQ7sN3WqcImg==}
-    engines: {node: '>=10'}
-
   delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
@@ -4598,10 +4599,6 @@ packages:
     resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
     engines: {node: '>=0.12.0'}
 
-  is-path-cwd@2.2.0:
-    resolution: {integrity: sha512-w942bTcih8fdJPJmQHFzkS76NEP8Kzzvmw92cXsazb8intwLqPibPPdXf4ANdKV3rYMuuQYGIWtvz9JilB3NFQ==}
-    engines: {node: '>=6'}
-
   is-path-inside@3.0.3:
     resolution: {integrity: sha512-Fd4gABb+ycGAmKou8eMftCupSir5lRxqf4aD/vd0cD2qc4HL07OjCeuHMr8Ro4CoMaeCKDB0/ECBOVWjTwUvPQ==}
     engines: {node: '>=8'}
@@ -5466,10 +5463,6 @@ packages:
     resolution: {integrity: sha512-d3qXVTF/s+W+CdJ5A29wywV2n8CQQYahlgz2bFiA+4eVNJbHJodPZ+/gXwPGh0bOqA+j8S+6+ckmvLGPk1QpxQ==}
     engines: {node: '>=8'}
 
-  p-map@4.0.0:
-    resolution: {integrity: sha512-/bjOqmgETBYB5BoEeGVea8dmvHb2m9GLy1E9W43yeyfP6QQCZGFNa+XRceJEuDB6zqr+gKpIAmlLebMpykw/MQ==}
-    engines: {node: '>=10'}
-
   p-map@7.1.1:
     resolution: {integrity: sha512-6Lh3jQPLthYujSrlw6ccWXBGZTkoTCz27Hd92g79LH/kjAbgoEu0t442cCCNbegPSJsA0lwDX8z0bcKtkpA32g==}
     engines: {node: '>=18'}
@@ -5989,12 +5982,6 @@ packages:
   rollup-plugin-copy@3.5.0:
     resolution: {integrity: sha512-wI8D5dvYovRMx/YYKtUNt3Yxaw4ORC9xo6Gt9t22kveWz1enG9QrhVlagzwrxSC455xD1dHMKhIJkbsQ7d48BA==}
     engines: {node: '>=8.3'}
-
-  rollup-plugin-delete@2.2.0:
-    resolution: {integrity: sha512-REKtDKWvjZlbrWpPvM9X/fadCs3E9I9ge27AK8G0e4bXwSLeABAAwtjiI1u3ihqZxk6mJeB2IVeSbH4DtOcw7A==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      rollup: '*'
 
   rollup-pluginutils@2.8.2:
     resolution: {integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==}
@@ -8001,7 +7988,7 @@ snapshots:
     dependencies:
       '@embroider/addon-shim': 1.11.0
 
-  '@embroider/addon-dev@4.3.1(@glint/template@1.11.0)(rollup@4.65.1)(supports-color@11.0.0)':
+  '@embroider/addon-dev@6.0.1(@glint/template@1.11.0)(rollup@4.65.1)(supports-color@11.0.0)':
     dependencies:
       '@embroider/core': 3.5.10(@glint/template@1.11.0)(supports-color@11.0.0)
       '@rollup/pluginutils': 4.2.1
@@ -8009,14 +7996,14 @@ snapshots:
       fs-extra: 10.1.0
       minimatch: 3.1.5
       rollup-plugin-copy-assets: 2.0.3(rollup@4.65.1)
-      rollup-plugin-delete: 2.2.0(rollup@4.65.1)
       walk-sync: 3.0.0
       yargs: 17.7.3
+    optionalDependencies:
+      rollup: 4.65.1
     transitivePeerDependencies:
       - '@glint/template'
       - bufferutil
       - canvas
-      - rollup
       - supports-color
       - utf-8-validate
 
@@ -10320,17 +10307,6 @@ snapshots:
       has-property-descriptors: 1.0.2
       object-keys: 1.1.1
 
-  del@6.1.1:
-    dependencies:
-      globby: 11.1.0
-      graceful-fs: 4.2.11
-      is-glob: 4.0.3
-      is-path-cwd: 2.2.0
-      is-path-inside: 3.0.3
-      p-map: 4.0.0
-      rimraf: 3.0.2
-      slash: 3.0.0
-
   delayed-stream@1.0.0: {}
 
   depd@1.1.2: {}
@@ -12251,8 +12227,6 @@ snapshots:
 
   is-number@7.0.0: {}
 
-  is-path-cwd@2.2.0: {}
-
   is-path-inside@3.0.3: {}
 
   is-path-inside@4.0.0: {}
@@ -13089,10 +13063,6 @@ snapshots:
     dependencies:
       aggregate-error: 3.1.0
 
-  p-map@4.0.0:
-    dependencies:
-      aggregate-error: 3.1.0
-
   p-map@7.1.1: {}
 
   p-try@1.0.0: {}
@@ -13592,11 +13562,6 @@ snapshots:
       fs-extra: 8.1.0
       globby: 10.0.1
       is-plain-object: 3.0.1
-
-  rollup-plugin-delete@2.2.0(rollup@4.65.1):
-    dependencies:
-      del: 6.1.1
-      rollup: 4.65.1
 
   rollup-pluginutils@2.8.2:
     dependencies:
