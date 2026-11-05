@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/ember/tsconfig.json",
+  "extends": "@ember/app-tsconfig",
   "compilerOptions": {
     // `paths` allows Ember's classic package layout, which is not resolvable
     // with the Node resolution algorithm, to work with TypeScript.
