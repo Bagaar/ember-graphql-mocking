@@ -11,12 +11,14 @@ on:
       - unlabeled
 
 concurrency:
-  group: plan-release # only the latest one of these should ever be running
+  # only the latest one of these should ever be running; label events on unmerged PRs get their own group so they can't cancel a real run on main
+  group: plan-release-${{ github.event_name == 'pull_request_target' && !github.event.pull_request.merged && github.event.pull_request.number || 'main' }}
   cancel-in-progress: true
 
 jobs:
   should-run-release-plan-prepare:
     name: Should we run release-plan prepare?
+    if: github.event_name != 'pull_request_target' || github.event.pull_request.merged
     runs-on: ubuntu-latest
     outputs:
       should-prepare: ${{ steps.should-prepare.outputs.should-prepare }}
