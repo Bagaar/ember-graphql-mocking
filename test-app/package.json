@@ -25,7 +25,7 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@apollo/client": "3.14.1",
+    "@apollo/client": "4.3.6",
     "@babel/core": "7.29.7",
     "@bagaar/ember-graphql-mocking": "workspace:*",
     "@ember/app-tsconfig": "2.1.0",
