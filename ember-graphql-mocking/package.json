@@ -70,7 +70,7 @@
     "@babel/plugin-transform-typescript": "7.29.9",
     "@babel/runtime": "7.29.10",
     "@ember/library-tsconfig": "3.0.0",
-    "@embroider/addon-dev": "8.4.2",
+    "@embroider/addon-dev": "8.5.0",
     "@eslint/js": "10.0.1",
     "@glint/core": "1.5.2",
     "@glint/environment-ember-loose": "1.5.2",
