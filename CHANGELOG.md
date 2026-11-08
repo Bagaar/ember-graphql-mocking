@@ -1,5 +1,25 @@
 # Changelog
 
+## Release (2026-11-08)
+
+* @bagaar/ember-graphql-mocking 1.1.1 (patch)
+
+#### :house: Internal
+* `@bagaar/ember-graphql-mocking`
+  * [#306](https://github.com/Bagaar/ember-graphql-mocking/pull/306) chore(deps-minor): update dependency graphql from 16.14.2 to 16.15.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#305](https://github.com/Bagaar/ember-graphql-mocking/pull/305) chore(deps-patch): update babel monorepo from 7.29.7 to 7.29.13 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#301](https://github.com/Bagaar/ember-graphql-mocking/pull/301) chore(deps-patch): update dependency rollup from 4.67.4 to 4.67.5 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#296](https://github.com/Bagaar/ember-graphql-mocking/pull/296) chore(deps-minor): update dependency @embroider/addon-dev from 8.4.2 to 8.5.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#292](https://github.com/Bagaar/ember-graphql-mocking/pull/292) chore(deps-patch): update dependency eslint-plugin-ember from 13.9.0 to 13.9.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#291](https://github.com/Bagaar/ember-graphql-mocking/pull/291) chore(deps-patch): update dependency @glint/template from 1.11.0 to 1.11.1 ([@renovate[bot]](https://github.com/apps/renovate))
+* Other
+  * [#297](https://github.com/Bagaar/ember-graphql-mocking/pull/297) chore(deps-minor): update pnpm from 12.16.1 to 12.17.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#295](https://github.com/Bagaar/ember-graphql-mocking/pull/295) chore(deps-minor): update dependency @ember/test-helpers from 5.7.0 to 5.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#290](https://github.com/Bagaar/ember-graphql-mocking/pull/290) chore(deps): pin dependency pnpm from 12.16.1 to 12.16.1 ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 1
+- Renovate [Bot] ([@renovate](https://github.com/apps/renovate))
+
 ## Release (2026-11-05)
 
 * @bagaar/ember-graphql-mocking 1.1.0 (minor)
