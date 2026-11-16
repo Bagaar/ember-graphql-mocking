@@ -9,7 +9,7 @@ Ember addon for mocking GraphQL requests using [Mock Service Worker (MSW)](https
 
 - Ember.js v5.12 up to v7.x
 - Embroider or ember-auto-import v2
-- MSW v2 or above
+- MSW v3 or above (use v1.x of this addon for MSW v2)
 
 ## Installation
 
@@ -176,7 +176,7 @@ export default class ApplicationRoute extends Route {
       enabled: config.graphqlMocking.isEnabled,
       resolvers: () => import('my-app/mocks/resolvers').then((m) => m.default),
       mswStartOptions: {
-        onUnhandledRequest: 'bypass',
+        onUnhandledFrame: 'bypass',
       },
     });
   }
