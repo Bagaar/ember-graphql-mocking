@@ -2,6 +2,26 @@
 
 ## Release (2026-11-16)
 
+* @bagaar/ember-graphql-mocking 2.0.0 (major)
+
+#### :boom: Breaking Change
+* `@bagaar/ember-graphql-mocking`
+  * [#321](https://github.com/Bagaar/ember-graphql-mocking/pull/321) MSW v3 ([@gvdp](https://github.com/gvdp))
+
+#### :rocket: Enhancement
+* `@bagaar/ember-graphql-mocking`
+  * [#321](https://github.com/Bagaar/ember-graphql-mocking/pull/321) MSW v3 ([@gvdp](https://github.com/gvdp))
+
+#### :house: Internal
+* `@bagaar/ember-graphql-mocking`
+  * [#307](https://github.com/Bagaar/ember-graphql-mocking/pull/307) chore(deps-dev): update dependency graphql from 16.15.0 to 17.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 2
+- Renovate [Bot] ([@renovate](https://github.com/apps/renovate))
+- [@gvdp](https://github.com/gvdp)
+
+## Release (2026-11-16)
+
 * @bagaar/ember-graphql-mocking 1.2.0 (minor)
 
 #### :rocket: Enhancement
