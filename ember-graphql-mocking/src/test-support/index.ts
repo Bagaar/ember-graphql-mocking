@@ -1,7 +1,7 @@
 import { assert } from '@ember/debug';
-import { buildASTSchema, graphql, type DocumentNode } from 'graphql';
-import { graphql as mswGraphql, HttpResponse } from 'msw';
+import type { DocumentNode } from 'graphql';
 import { setupWorker, type SetupWorker, type StartOptions } from 'msw/browser';
+import { createGraphqlOperationHandler } from '../-private/graphql-operation-handler.ts';
 
 interface Options {
   mswStartOptions: StartOptions;
@@ -39,7 +39,7 @@ export async function setupEmberGraphqlMocking(
 ) {
   options = { ...DEFAULT_OPTIONS, ...providedOptions };
   createWorker();
-  createGraphqlOperationHandler(schemaDocument);
+  useGraphqlOperationHandler(schemaDocument);
 }
 
 export function setupGraphqlTest(hooks: Hooks) {
@@ -97,27 +97,10 @@ function createWorker() {
   worker = setupWorker();
 }
 
-function createGraphqlOperationHandler(schemaDocument: DocumentNode) {
+function useGraphqlOperationHandler(schemaDocument: DocumentNode) {
   assert('[BUG] `worker` is not set.', worker);
 
-  const schema = buildASTSchema(schemaDocument);
-  const graphqlOperation = mswGraphql.operation(async ({ request }) => {
-    const { query, variables } = (await request.json()) || {
-      query: '',
-      variables: {},
-    };
-
-    const { data, errors } = await graphql({
-      rootValue: root,
-      schema,
-      source: query,
-      variableValues: variables,
-    });
-
-    return HttpResponse.json({ data, errors });
-  });
-
-  worker.use(graphqlOperation);
+  worker.use(createGraphqlOperationHandler(schemaDocument, () => root));
 }
 
 async function startWorker(mswStartOptions: Options['mswStartOptions']) {

@@ -122,6 +122,79 @@ module('Acceptance | ember-graphql-mocking', function (hooks) {
 > [!NOTE]
 > Working versions of these code examples can be found in [this addon's test app](./test-app/).
 
+## Mocking at Runtime
+
+The same schema-backed mocking can be used outside of tests, e.g. to run your app locally against a mocked API. `startGraphqlMocking` starts an MSW worker that resolves every named operation against your schema using the given resolvers.
+
+#### 1. Define your resolvers
+
+Keep your resolvers in their own module. The keys and values follow the same rules as `mockResolvers`.
+
+```javascript
+// app/mocks/resolvers.js
+
+export default {
+  me: () => ({ id: '1', firstName: 'John', lastName: 'Doe' }),
+  updateMe: ({ input }) => ({ id: '1', ...input }),
+};
+```
+
+#### 2. Add a flag to enable mocking
+
+Decide in your app when mocking should be enabled, e.g. via an environment variable in development:
+
+```javascript
+// config/environment.js
+
+module.exports = function (environment) {
+  const ENV = {
+    // ...
+    graphqlMocking: {
+      isEnabled: environment === 'development' && process.env.GRAPHQL_MOCKING === 'true',
+    },
+  };
+
+  return ENV;
+};
+```
+
+#### 3. Start mocking before your app boots
+
+Call `startGraphqlMocking` in your application route's `beforeModel` hook, so the worker is running before the first GraphQL request is sent. When `enabled` is `false` it does nothing. MSW, graphql-js and (when passed as a function) your resolvers are only loaded when mocking is enabled.
+
+```javascript
+// app/routes/application.js
+
+import Route from '@ember/routing/route';
+import { startGraphqlMocking } from '@bagaar/ember-graphql-mocking';
+import config from 'my-app/config/environment';
+import schema from 'my-app/graphql/schema';
+
+export default class ApplicationRoute extends Route {
+  async beforeModel() {
+    await startGraphqlMocking(schema, {
+      enabled: config.graphqlMocking.isEnabled,
+      resolvers: () => import('my-app/mocks/resolvers').then((m) => m.default),
+      mswStartOptions: {
+        onUnhandledRequest: 'bypass',
+      },
+    });
+  }
+}
+```
+
+`startGraphqlMocking` returns a Promise that resolves to the started MSW worker (or `undefined` when disabled), so you can register additional handlers via `worker.use(...)`. It accepts the following options:
+
+| Option            | Default                       | Description                                                                                                                                          |
+| ----------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `resolvers`       |                               | **Required.** Object of resolvers keyed by root field name, or a function returning a Promise of that object (to load them lazily).                 |
+| `enabled`         | `true`                        | Whether to start mocking at all.                                                                                                                     |
+| `mswStartOptions` | `{}`                          | Passed to MSW's [`worker.start`](https://mswjs.io/docs/api/setup-worker/start#options).                                                              |
+| `onErrors`        | Logs errors via `console.error` | Called with the GraphQL errors and operation name whenever an operation resolves with errors (e.g. schema violations or errors thrown in resolvers). |
+
+> [!NOTE]
+> When mocking at runtime, `@bagaar/ember-graphql-mocking`, `msw` and `graphql` need to be regular `dependencies` of your app, and `mockServiceWorker.js` must be served from your app's `public/` folder (see [MSW's setup guide](https://mswjs.io/docs/integrations/browser#copy-the-worker-script)).
+
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
