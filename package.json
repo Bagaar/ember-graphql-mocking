@@ -6,7 +6,7 @@
   },
   "license": "MIT",
   "author": "Bagaar",
-  "packageManager": "pnpm@12.17.0",
+  "packageManager": "pnpm@12.20.0",
   "scripts": {
     "build": "pnpm --filter ember-graphql-mocking build",
     "lint": "pnpm --filter '*' lint",
@@ -20,7 +20,7 @@
   "devDependencies": {
     "@glint/core": "1.5.2",
     "concurrently": "10.0.7",
-    "prettier": "3.9.10",
+    "prettier": "3.10.1",
     "prettier-plugin-ember-template-tag": "2.1.8",
     "release-plan": "0.20.1"
   },
