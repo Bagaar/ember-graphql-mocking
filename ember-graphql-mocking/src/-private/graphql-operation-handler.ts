@@ -30,6 +30,11 @@ export function createGraphqlOperationHandler(
       onErrors(errors, operationName);
     }
 
-    return HttpResponse.json({ data, errors });
+    // MSW types its response body against its own `graphql` dependency, which
+    // can be a different major than ours, so hand it the serialized errors.
+    return HttpResponse.json({
+      data,
+      errors: errors?.map((error) => error.toJSON()),
+    });
   });
 }
