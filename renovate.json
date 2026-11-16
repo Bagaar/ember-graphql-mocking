@@ -7,7 +7,7 @@
     ":semanticCommitTypeAll(chore)",
     "schedule:weekends",
     ":pinAllExceptPeerDependencies",
-    ":∆maintainLockFilesDisabled"
+    ":maintainLockFilesDisabled"
   ],
   "separateMultipleMajor": true,
   "labels": [
