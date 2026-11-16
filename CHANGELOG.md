@@ -1,5 +1,45 @@
 # Changelog
 
+## Release (2026-11-16)
+
+* @bagaar/ember-graphql-mocking 1.2.0 (minor)
+
+#### :rocket: Enhancement
+* `@bagaar/ember-graphql-mocking`
+  * [#320](https://github.com/Bagaar/ember-graphql-mocking/pull/320) feat: add exported method to start graphql mocking in running Ember app ([@gvdp](https://github.com/gvdp))
+
+#### :house: Internal
+* Other
+  * [#264](https://github.com/Bagaar/ember-graphql-mocking/pull/264) chore(deps-dev): update dependency @apollo/client from 3.14.1 to 4.3.8 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#304](https://github.com/Bagaar/ember-graphql-mocking/pull/304) chore(deps-dev): update stylelint (major) ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#316](https://github.com/Bagaar/ember-graphql-mocking/pull/316) chore(deps-minor): update pnpm from 12.17.0 to 12.20.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#315](https://github.com/Bagaar/ember-graphql-mocking/pull/315) chore(deps-dev): update dependency stylelint-prettier from 5.0.3 to 5.1.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#311](https://github.com/Bagaar/ember-graphql-mocking/pull/311) chore(deps-patch): update peter-evans/create-pull-request action from v8.1.1 to v8.1.3 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#303](https://github.com/Bagaar/ember-graphql-mocking/pull/303) chore(deps-major): update node.js from v24.22.2 to v26.13.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#299](https://github.com/Bagaar/ember-graphql-mocking/pull/299) chore(deps-major): update dependency ember-cli from 6.12.0 to 7.3.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#265](https://github.com/Bagaar/ember-graphql-mocking/pull/265) chore(deps-major): update dependency @ember/string from 3.1.1 to 4.0.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#293](https://github.com/Bagaar/ember-graphql-mocking/pull/293) chore(deps-patch): update pnpm/action-setup action from v6.1.0 to v6.1.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#297](https://github.com/Bagaar/ember-graphql-mocking/pull/297) chore(deps-minor): update pnpm from 12.16.1 to 12.17.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#295](https://github.com/Bagaar/ember-graphql-mocking/pull/295) chore(deps-minor): update dependency @ember/test-helpers from 5.7.0 to 5.8.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#290](https://github.com/Bagaar/ember-graphql-mocking/pull/290) chore(deps): pin dependency pnpm from 12.16.1 to 12.16.1 ([@renovate[bot]](https://github.com/apps/renovate))
+* `@bagaar/ember-graphql-mocking`
+  * [#314](https://github.com/Bagaar/ember-graphql-mocking/pull/314) chore(deps-dev): update dependency rollup from 4.67.5 to 4.68.3 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#313](https://github.com/Bagaar/ember-graphql-mocking/pull/313) chore(deps-dev): update dependency prettier from 3.9.10 to 3.10.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#312](https://github.com/Bagaar/ember-graphql-mocking/pull/312) chore(deps-dev): update dependency eslint-plugin-ember from 13.9.1 to 13.10.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#310](https://github.com/Bagaar/ember-graphql-mocking/pull/310) chore(deps-dev): update dependency typescript-eslint from 8.72.1 to 8.72.2 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#309](https://github.com/Bagaar/ember-graphql-mocking/pull/309) chore(deps-patch): update dependency concurrently from 10.0.6 to 10.0.7 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#308](https://github.com/Bagaar/ember-graphql-mocking/pull/308) chore(deps-patch): update dependency @babel/runtime from 7.29.13 to 7.29.14 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#306](https://github.com/Bagaar/ember-graphql-mocking/pull/306) chore(deps-minor): update dependency graphql from 16.14.2 to 16.15.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#305](https://github.com/Bagaar/ember-graphql-mocking/pull/305) chore(deps-patch): update babel monorepo from 7.29.7 to 7.29.13 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#301](https://github.com/Bagaar/ember-graphql-mocking/pull/301) chore(deps-patch): update dependency rollup from 4.67.4 to 4.67.5 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#296](https://github.com/Bagaar/ember-graphql-mocking/pull/296) chore(deps-minor): update dependency @embroider/addon-dev from 8.4.2 to 8.5.0 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#292](https://github.com/Bagaar/ember-graphql-mocking/pull/292) chore(deps-patch): update dependency eslint-plugin-ember from 13.9.0 to 13.9.1 ([@renovate[bot]](https://github.com/apps/renovate))
+  * [#291](https://github.com/Bagaar/ember-graphql-mocking/pull/291) chore(deps-patch): update dependency @glint/template from 1.11.0 to 1.11.1 ([@renovate[bot]](https://github.com/apps/renovate))
+
+#### Committers: 2
+- Renovate [Bot] ([@renovate](https://github.com/apps/renovate))
+- [@gvdp](https://github.com/gvdp)
+
 ## Release (2026-11-05)
 
 * @bagaar/ember-graphql-mocking 1.1.0 (minor)
