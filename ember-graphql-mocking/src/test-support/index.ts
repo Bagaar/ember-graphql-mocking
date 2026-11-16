@@ -60,8 +60,8 @@ export function setupGraphqlTest(hooks: Hooks) {
     await startWorker(options?.mswStartOptions || {});
   });
 
-  hooks.afterEach(() => {
-    stopWorker();
+  hooks.afterEach(async () => {
+    await stopWorker();
     clearRoot();
   });
 }
@@ -84,13 +84,13 @@ export function getWorker() {
   return worker;
 }
 
-export function stopWorker() {
+export async function stopWorker() {
   assert(
-    'Cannot call `destroyWorker` before calling `setupEmberGraphqlMocking`. Please make sure to call `setupEmberGraphqlMocking(yourSchemaDocument[, yourProvidedOptions]);`.',
+    'Cannot call `stopWorker` before calling `setupEmberGraphqlMocking`. Please make sure to call `setupEmberGraphqlMocking(yourSchemaDocument[, yourProvidedOptions]);`.',
     worker,
   );
 
-  worker.stop();
+  await worker.stop();
 }
 
 function createWorker() {
