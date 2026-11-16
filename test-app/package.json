@@ -41,7 +41,7 @@
     "@types/qunit": "2.19.14",
     "@types/rsvp": "4.0.9",
     "broccoli-asset-rev": "3.0.0",
-    "concurrently": "10.0.6",
+    "concurrently": "10.0.7",
     "ember-auto-import": "2.13.1",
     "ember-cli": "7.3.0",
     "ember-cli-babel": "8.3.2",
