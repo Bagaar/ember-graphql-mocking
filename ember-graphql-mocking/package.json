@@ -91,7 +91,7 @@
     "msw": "3.0.6",
     "prettier": "3.10.1",
     "prettier-plugin-ember-template-tag": "2.1.8",
-    "rollup": "4.68.3",
+    "rollup": "4.68.8",
     "rollup-plugin-copy": "3.5.0",
     "typescript": "6.0.3",
     "typescript-eslint": "8.72.2"
