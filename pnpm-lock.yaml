@@ -255,8 +255,8 @@ importers:
         specifier: 10.1.8
         version: 10.1.8(eslint@10.14.0(supports-color@11.0.0))
       eslint-plugin-ember:
-        specifier: 13.10.0
-        version: 13.10.0(@typescript-eslint/parser@8.72.2(eslint@10.14.0(supports-color@11.0.0))(supports-color@11.0.0)(typescript@6.0.3))(eslint@10.14.0(supports-color@11.0.0))(typescript@6.0.3)
+        specifier: 13.11.5
+        version: 13.11.5(@typescript-eslint/parser@8.72.2(eslint@10.14.0(supports-color@11.0.0))(supports-color@11.0.0)(typescript@6.0.3))(eslint@10.14.0(supports-color@11.0.0))(typescript@6.0.3)
       eslint-plugin-n:
         specifier: 18.5.0
         version: 18.5.0(eslint@10.14.0(supports-color@11.0.0))(typescript@6.0.3)
@@ -405,8 +405,8 @@ importers:
         specifier: 10.1.8
         version: 10.1.8(eslint@10.14.0(supports-color@11.0.0))
       eslint-plugin-ember:
-        specifier: 13.10.0
-        version: 13.10.0(@typescript-eslint/parser@8.72.2(eslint@10.14.0(supports-color@11.0.0))(supports-color@11.0.0)(typescript@6.0.3))(eslint@10.14.0(supports-color@11.0.0))(typescript@6.0.3)
+        specifier: 13.11.5
+        version: 13.11.5(@typescript-eslint/parser@8.72.2(eslint@10.14.0(supports-color@11.0.0))(supports-color@11.0.0)(typescript@6.0.3))(eslint@10.14.0(supports-color@11.0.0))(typescript@6.0.3)
       eslint-plugin-n:
         specifier: 18.5.0
         version: 18.5.0(eslint@10.14.0(supports-color@11.0.0))(typescript@6.0.3)
@@ -3686,8 +3686,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-ember@13.10.0:
-    resolution: {integrity: sha512-d5pP+3xKSHg5w8g8vixjr3zCVdmUsD6VhMxvFfUv2RYQ1fUF9GKsI+BrxJEd/vQWAB1fyC5cyq6NfPgyRDW7YQ==}
+  eslint-plugin-ember@13.11.5:
+    resolution: {integrity: sha512-0vTcQ/DmSHeoBPP/OdKoJz9l8P1rJeI03fOHwv7aZhuPK632edRkKxQLPcrBqMAtPWYbvNMOX5JqpPnSM2yEgw==}
     engines: {node: '>= 20.19'}
     peerDependencies:
       '@typescript-eslint/parser': '*'
@@ -10973,7 +10973,7 @@ snapshots:
     dependencies:
       eslint: 10.14.0(supports-color@11.0.0)
 
-  eslint-plugin-ember@13.10.0(@typescript-eslint/parser@8.72.2(eslint@10.14.0(supports-color@11.0.0))(supports-color@11.0.0)(typescript@6.0.3))(eslint@10.14.0(supports-color@11.0.0))(typescript@6.0.3):
+  eslint-plugin-ember@13.11.5(@typescript-eslint/parser@8.72.2(eslint@10.14.0(supports-color@11.0.0))(supports-color@11.0.0)(typescript@6.0.3))(eslint@10.14.0(supports-color@11.0.0))(typescript@6.0.3):
     dependencies:
       '@ember-data/rfc395-data': 0.0.4
       aria-query: 5.3.2
